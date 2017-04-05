@@ -87,7 +87,58 @@ header {
 //Main
 
 main {
+	.mag-main-content {
+		margin-top: 35px;
+	}
 
+	.mag-back-bg {
+		background-image: url(img/mag-back-bg.jpg);
+
+		.mag-back-text-bg {
+			background-color: rgba(255,255,255,.5);
+		}
+	}
+	
+	.mag-fotoparrafo {
+		margin-bottom: 50px;
+
+		.mag-fotoparrafo-img{
+			float: left;
+			width: 55%;
+		}
+
+		.mag-fotoparrafo-text {
+			float: left;
+			width: 45%;
+			padding: 40px 15px;
+		}	
+	}
+	
+	.mag-galeria-img {
+		display: block;
+	    max-width: 100%;
+	    height: auto;
+	    margin-bottom: 50px;
+	}
+
+	.mag-outfit-main-img {
+		margin: auto;
+	}
+
+	.mag-mansory-title {
+		margin: 30px 0;
+	}
+
+	.mag-mansory-img {
+		margin-bottom: 40px;
+	}
+
+	.mag-texto-slider {
+		float: left;
+		clear: both;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
 }
 
 .mag-home-note {
