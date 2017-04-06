@@ -11,6 +11,73 @@
    margin: 0 !important;
 }
 
+body {
+	&.mag-template-1 {
+		header {
+			.navbar-default {
+				background-color: $p01-headerbg;
+				.navbar-header {
+					.navbar-brand-wrapper {
+						.navbar-brand {
+							background-color: $p01-headerbg;
+						}
+					}
+				}
+
+			}
+		}
+	}
+	&.mag-template-2 {
+		header {
+			.navbar-default {
+				background-color: $p02-headerbg;
+				.navbar-header {
+					.navbar-brand-wrapper {
+						.navbar-brand {
+							background-color: $p02-headerbg;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.mag-template-3 {
+		header {
+			.navbar-default {
+				background-color: $p03-headerbg;
+				.navbar-header {
+					.navbar-brand-wrapper {
+						.navbar-brand {
+							background-color: $p03-headerbg;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.breadcrumb {
+    padding: 5px 0 0 40px;
+    margin-bottom: 0;
+    margin-top: 40px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 1.25em;
+}
+
+.mag-breadcrumb-divider {
+	width: 33%;
+	border: 1px solid black;
+	display: block;
+	position: relative;
+	clear: both;
+	margin-top: 5px;
+	margin-bottom: 45px;
+}
+
 //Header
 header {
 	.navbar {
@@ -20,7 +87,7 @@ header {
 	}
 	.navbar-default {
 		border-radius: 0px;
-		background-color: $p01-headerbg;
+		background-color: black;
 
 		.navbar-header {
 			.navbar-brand-wrapper {
@@ -32,7 +99,7 @@ header {
 					max-width: 275px;
 					padding: 15px 10px;
 					height: 80px; 
-					background-color: $p01-headerbg;
+					background-color: black;
 					box-shadow: 1px 1px 8px #5f5f5f;
 					.navbar-brand-img {
 						width: 100%;
