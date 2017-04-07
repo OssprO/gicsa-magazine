@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" href="css/styles.css"/>
 </head>
-<body>
+<body class="mag-template-1">
 
 <header>
 	<!--<div class="container">-->
@@ -74,7 +74,13 @@
 
 		<!--SLIDER-->
 		<div class="row">
-			<img style="width: 100%;" src="http://placehold.it/1200x500" alt="Slider"/>
+			<div class="mag-main-slider">
+				<img src="http://placehold.it/1200x500/333333/98de82?text=SLIDER01" alt="Slider Element 01"/>
+				<img src="http://placehold.it/1200x500/333333/cd1245?text=SLIDER02" alt="Slider Element 02"/>
+				<img src="http://placehold.it/1200x500/333333/0185CD?text=SLIDER03" alt="Slider Element 03"/>
+				<img src="http://placehold.it/1200x500/333333/7862f4?text=SLIDER04" alt="Slider Element 04"/>
+			</div>
+			
 		</div>
 
 
@@ -255,6 +261,15 @@
   crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
+
+<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.mag-main-slider').slick();
+	});
+
+</script>
 
 <script src="js/scripts.js"></script>
 
