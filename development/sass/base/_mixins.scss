@@ -68,3 +68,54 @@
         %padding-horizontal-#{$i}x{ padding-right: $spacing * $i; }
     }
 }
+
+
+
+
+
+/// @name cl-effect-1
+/// @author Mary Lou https://tympanus.net/codrops/2013/08/06/creative-link-effects/
+/// Effect 1: Brackets
+
+
+
+@mixin cl-effect-1( $time ) {
+    &::before,
+    &::after {
+        display: inline-block;
+        opacity: 0;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+        transition: transform 0.3s, opacity 0.2s;
+    }
+
+    &::before {
+        margin-right: 10px;
+        content: '[';
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+
+    &::after {
+        margin-left: 10px;
+        content: ']';
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+
+
+
