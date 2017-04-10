@@ -6,7 +6,7 @@
 	<title>MagazINe | NOTAS: Outfit</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
+	
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 
@@ -38,18 +38,18 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-main">
-						<li><a href="/nosotros.html">NOSOTROS</a></li>
-						<li><a href="/nota-base.html">TEMÁTICAS</a></li>
+						<li><a href="nosotros.html">NOSOTROS</a></li>
+						<li><a href="nota-base.html">TEMÁTICAS</a></li>
 						<li><a href="">SECCIONES</a></li>
-						<li><a href="/sociales.html">SOCIALES</a></li>
-						<li><a href="/promociones.html">PROMOCIONES</a></li>
-						<li><a href="">PRODUCTOS</a></li>
+						<li><a href="sociales.html">SOCIALES</a></li>
+						<li><a href="promociones.html">PROMOCIONES</a></li>
+						<li><a href="concurso.html">CONCURSOS</a></li>
 						<li><a href="contacto.html">CONTACTO</a></li>
 					</ul>
 					
 					<form class="navbar-form navbar-left">
 						<div class="form-group">
-							<input type="text" class="form-control input-sm" placeholder="Search">
+							<input type="text" class="form-control input-sm gicsa-search-input">
 						</div>
 					</form>
 					
@@ -69,25 +69,21 @@
 <main>
 
 	<div class="container-fluid mag-main-content">
-
 		<!--BREADCRUM-->
 		<div class="row">
-			<div class="col-xs-12">
-				<ol class="breadcrumb">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Temáticas</a></li>
-					<li><a href="#">Moda</a></li>
-					<li class="active">Escape Casual</li>
-				</ol>
-				<hr/>
-				<h2>Escape Casual</h2>
-				<p>08/03/17</p>
-			</div>
+			<ol class="breadcrumb">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Temáticas</a></li>
+				<li><a href="#">Moda</a></li>
+				<li class="active">Escape Casual</li>
+			</ol>
+			<div class="mag-breadcrumb-divider"></div>
+			<h2 class="mag-page-title">Escape Casual</h2>
+			<p class="mag-page-date">08/04/17</p>
 		</div>
 	</div>
 
 	<div class="container">
-
 		<!--CONTENIDO-->
 		<div class="row">
 			<div class="col-xs-12 col-md-4">
@@ -141,11 +137,48 @@
 
 	</div>
 
-	<div class="container">
-		<!--PUBLICIDAD-->
-		<div class="row">
-			<div class="col-xs-12 nopadding">
-				
+	<!--PUBLICIDAD-->
+	<div class="mag-advertising-wrapper">
+		<div class="container">
+			<div class="row mag-advertising">
+				<div class="col-xs-12 col-md-2 nopadding">
+					<h4>Compartir</h4>
+					<ul class="mag-compartir">
+						<li>
+							<a href="">
+								<img src="http://placehold.it/28x28/000000/ffffff?text=FB" alt=""/>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="http://placehold.it/28x28/000000/ffffff?text=TW" alt=""/>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-10 nopadding">
+					<h4>Puedes encontrar algunos productos en:</h4>
+					<div class="mag-advertising-slider">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--BOTONES DE NAVEGACIÓN-->
+	<div class="container-fluid">
+		<div class="row mag-navigation-buttons">
+			<div class="col-xs-6">
+				<a href="" class="btn btn-gicsa btn-navigation prev">Anterior</a>
+			</div>
+			<div class="col-xs-6">
+				<a href="" class="btn btn-gicsa btn-navigation next pull-right">Siguiente</a>
 			</div>
 		</div>
 	</div>

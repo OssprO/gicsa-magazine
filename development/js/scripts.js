@@ -26,6 +26,11 @@
 		fade: true,
 	});
 
+	$('.mag-concurso-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+
 	//Publicidad
 	$('.mag-advertising-slider').slick({
 		slidesToShow: 3,
