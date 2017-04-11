@@ -135,40 +135,45 @@ body {
 
 
 .breadcrumb {
-    padding: 5px 0 0 40px;
-    margin-bottom: 0;
-    margin-top: 40px;
+    margin: 20px 0;
     list-style: none;
     background-color: transparent;
     border-radius: 0;
     font-size: 1.25em;
 
-    a {
-    	@include cl-effect-1(.3);
-    	text-decoration: none;
-    	
-    	color: inherit;
-
-    	&:hover {
-    		//font-weight: bold;
+    li {
+    	display: none;
+    	&::before {
+    		display: none;
+    	}
+    	&.active {
+    		padding: 0 10px;
+			display: block;
+			font-size: 26px;
+			font-style: italic;
+			font-weight: bold;
+			font-variant: uppercase;
+			line-height: 28px;
+			color: $gray-dark;
+			width: 100%;
+			border: 1px solid black;
     	}
     }
 }
 
 h2.mag-page-title {
-	font-size: 2.5em;
+	font-size: 1.5em;
 	font-weight: bold;
 	font-style: italic;
-	margin-left: 60px;
+	margin-left: 15px;
 	color: $gray;
 }
 
 h2.mag-page-subtitle {
-	font-size: 2.5em;
+	font-size: 1.5em;
 	font-weight: bold;
 	font-style: italic;
 	color: $gray;
-	max-width: 50%;
 }
 
 p.mag-page-date {
@@ -177,19 +182,13 @@ p.mag-page-date {
 }
 
 .mag-breadcrumb-divider {
-	width: 33%;
-	border: 1px solid black;
-	display: block;
-	position: relative;
-	clear: both;
-	margin-top: 5px;
-	margin-bottom: 45px;
+	display: none;
 }
 
 //Text
 
 p {
-	font-family: 'AvenirLTStd', sans-serif;
+	font-family: 'AvenirLTStd-Light', sans-serif;
 	font-size: 17px;
 	line-height: 23px;
 	margin: 0 0 30px;
@@ -205,6 +204,10 @@ ol, ul {
 	}
 }
 
+.text-center-xs {
+	text-align: center;
+}
+
 
 //Images
 .img-fullwidth {
@@ -214,6 +217,13 @@ ol, ul {
 
 //Header
 header {
+
+	.logo-gicsa {
+		float: right;
+		//margin: 18px -15px 0 10px;
+		padding: 10px;
+	}
+
 	.navbar {
 		height: auto;
 		margin-bottom: 0px;
@@ -265,20 +275,15 @@ header {
 		}
 
 		ul.navbar-main {
-			margin-left: 5px;
+			
 			li {
-				border-right: 1px solid white; 
-				margin-bottom: 14px;
-				margin-top: 14px;
-				&:last-child {
-				    border-right: none;
-				}
+				text-align: center;
+				
 				a {
 					padding: 10px;
-					//padding-top: 10px;
 					color: white;
 					font-family: 'AvenirLTStd-Heavy';
-					font-size: 11px;
+					font-size: 15px;
 					
 					&:hover {
 						color: #5a5a5a;
@@ -292,10 +297,7 @@ header {
 			margin-top: 10px;
 		}
 
-		.logo-gicsa {
-			margin: 18px -15px 0 10px;
-			float: right;
-		}
+		
 
 		.navbar-right {
 			margin: 0;
@@ -347,11 +349,6 @@ main {
 			height: auto;
 		}
 		
-	}
-
-
-	.mag-main-content {
-		margin-top: 35px;
 	}
 
 	.mag-back-wrapper {
@@ -429,7 +426,7 @@ main {
 		@extend .m-bottom-4;
 
 		.mag-gallery-slider-for {
-			min-height: 500px;
+			//min-height: 500px;
 			img {
 				height: auto;
 			}
@@ -437,8 +434,8 @@ main {
 
 		.mag-gallery-slider-nav {
 			background-color: $gray;
-			min-height: 170px;
-			height: auto;
+			//min-height: 170px;
+			//height: auto;
 			img {
 				height: auto;
 				margin: 10px 5px;
@@ -474,11 +471,11 @@ main {
 				font-style: italic;
 			}
 			.sociales-contenido-date {
-				font-family: 'AvenirLTStd', sans-serif;
+				font-family: 'AvenirLTStd-Light', sans-serif;
 				font-size: 18px;
 			}
 			.sociales-contenido-texto, .sociales-contenido-texto > p {
-				font-family: 'AvenirLTStd', sans-serif;
+				font-family: 'AvenirLTStd-Light', sans-serif;
 				font-size: 16px;
 			}
 		}
@@ -516,7 +513,7 @@ main {
 				font-style: italic;
 			}
 			.fotoparrafo-contenido-texto, .fotoparrafo-contenido-texto > p {
-				font-family: 'AvenirLTStd', sans-serif;
+				font-family: 'AvenirLTStd-Light', sans-serif;
 				font-size: 16px;
 			}
 		}
@@ -570,6 +567,7 @@ main {
 
 	//Concurso 
 	.mag-concurso-slider {
+		margin-bottom: 20px;
 		img {
 			height: auto;
 		}
@@ -651,6 +649,10 @@ main {
 	  	display: block;
 	  	clear: both;
 	}
+
+	p {
+		margin: 0 0 15px;
+	}
 }
 
 $mag-tile-width: 400px;
@@ -686,6 +688,11 @@ $mag-tile-height: 280px;
 			li {
 				display: inline-block;
 				margin-right: 15px;
+
+				img {
+					max-height: 24px;
+					width: auto;
+				}
 			}
 		}
 
@@ -939,8 +946,13 @@ select.select-gicsa {
 			font-weight: bold;
 		}
 
+		.mag-advertising-slider-wrapper {
+			margin: auto !important;
+			
+		}
+
 		.mag-advertising-slider {
-			min-height: 120px;
+			//min-height: 120px;
 			margin-bottom: 20px;
 			img {
 				margin: 5px;
@@ -977,13 +989,13 @@ footer {
 	min-height: 155px;
 
 	.gicsa-footer-logo{
-		margin: 55px 0;
+		margin: 20px 0;
 	}
 
 	.gicsa-footer-list{
-		margin: 17px 0;
+		margin: 20px 0;
 		.gicsa-footer-list-element {
-			font-size: 10px;
+			font-size: 14px;
 			color: white;
 			padding: 5px 0px;
 		}	
@@ -1022,14 +1034,83 @@ $spacing: 5px;
 /* Small devices (tablets, 768px and up) */
 $screen-sm-min: 768px;
 @media (min-width: $screen-sm-min) { 
-	
+	.text-center-sm {
+		text-align: center;
+	}
+	.text-left-sm {
+		text-align: left;
+	}
+	.text-right-sm {
+		text-align: right;
+	}
+	.text-justiy-sm {
+		text-align: justify;
+	}
+
+	.breadcrumb {
+	    padding: 5px 0 0 40px;
+	    margin-bottom: 0;
+	    margin-top: 40px;
+	    list-style: none;
+	    background-color: transparent;
+	    border-radius: 0;
+	    font-size: 1.25em;
+
+	    a {
+	    	@include cl-effect-1(.3);
+	    	text-decoration: none;
+	    	
+	    	color: inherit;
+
+	    	&:hover {
+	    		//font-weight: bold;
+	    	}
+	    }
+	}
+
+	.mag-breadcrumb-divider {
+		width: 33%;
+		border: 1px solid black;
+		display: block;
+		position: relative;
+		clear: both;
+		margin-top: 5px;
+		margin-bottom: 45px;
+	}
+
+	main {
+		.mag-main-content {
+			margin-top: 35px;
+		}
+	}
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 $screen-md-min: 992px;
 @media (min-width: $screen-md-min) {
 
+	.text-center-md {
+		text-align: center;
+	}
+	.text-left-md {
+		text-align: left;
+	}
+	.text-right-md {
+		text-align: right;
+	}
+	.text-justiy-md {
+		text-align: justify;
+	}
+
 	header {
+		
+		.logo-gicsa {
+			padding: 0;
+			float: right;
+			margin: 18px -15px 0 10px;
+		}
+
 		.navbar {
 			height: 70px;
 		}
@@ -1053,7 +1134,64 @@ $screen-md-min: 992px;
 					}
 				}
 
+				
+
 			}
+
+			ul.navbar-main {
+				margin-left: 5px;
+				li {
+					border-right: 1px solid white; 
+					margin-top: 16px;
+					&:last-child {
+					    border-right: none;
+					}
+					a {
+						padding: 10px;
+						
+						font-size: 11px;
+						
+						&:hover {
+							color: #5a5a5a;
+						}
+					}
+				}
+			}
+
+
+		}
+	}
+
+	.mag-advertising-wrapper {
+		
+		.mag-advertising {
+			
+			.mag-advertising-slider-wrapper {
+				margin: 0;
+			}
+		}
+	}
+
+	h2.mag-page-title {
+		font-size: 2.5em;
+		margin-left: 60px;
+	}
+
+	h2.mag-page-subtitle {
+		font-size: 2.5em;
+		max-width: 50%;
+	}
+
+	footer {
+		.gicsa-footer-logo{
+			margin: 55px 0;
+		}
+
+		.gicsa-footer-list{
+			margin: 17px 0;
+			.gicsa-footer-list-element {
+				font-size: 10px;
+			}	
 		}
 	}
 
@@ -1062,6 +1200,20 @@ $screen-md-min: 992px;
 /* Large devices (large desktops, 1200px and up) */
 $screen-lg-min: 1200px;
 @media (min-width: $screen-lg-min) {
+
+	.text-center-lg {
+		text-align: center;
+	}
+	.text-left-lg {
+		text-align: left;
+	}
+	.text-right-lg {
+		text-align: right;
+	}
+	.text-justiy-lg {
+		text-align: justify;
+	}
+
 	.container {
 		width: 1200px;
 	}
