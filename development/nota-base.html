@@ -6,7 +6,7 @@
 	<title>MagazINe | NOTAS: Base</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
+	
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 
@@ -21,7 +21,7 @@
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -36,28 +36,48 @@
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse" id="navbar-collapse">
 					<ul class="nav navbar-nav navbar-main">
-						<li><a href="/nosotros.html">NOSOTROS</a></li>
-						<li><a href="/nota-base.html">TEMÁTICAS</a></li>
+						<li><a href="nosotros.html">NOSOTROS</a></li>
+						<li><a href="nota-base.html">TEMÁTICAS</a></li>
 						<li><a href="">SECCIONES</a></li>
-						<li><a href="/sociales.html">SOCIALES</a></li>
-						<li><a href="/promociones.html">PROMOCIONES</a></li>
-						<li><a href="">PRODUCTOS</a></li>
+						<li><a href="sociales.html">SOCIALES</a></li>
+						<li><a href="promociones.html">PROMOCIONES</a></li>
+						<li><a href="#">EVENTOS</a></li>
+						<li><a href="concurso.html">CONCURSOS</a></li>
 						<li><a href="contacto.html">CONTACTO</a></li>
 					</ul>
 					
-					<form class="navbar-form navbar-left">
-						<div class="form-group">
-							<input type="text" class="form-control input-sm" placeholder="Search">
-						</div>
-					</form>
+					<div class="logo-gicsa">
+						<a href="">
+							<img src="img/gicsalogo.png" alt="GICSA"/>
+						</a>
+					</div>
 					
 					<ul class="nav navbar-nav navbar-right navbar-social">
-						<li><a href=""><img src="img/facebook.png" alt="Facebook"/></a></li>
-						<li><a href=""><img src="img/twitter.png" alt="Twitter"/></a></li>
-						<li><a href=""><img src="img/instagram.png" alt="Instagram"/></a></li>
-						<li class="logo-gicsa"><a href=""><img src="img/gicsalogo.png" alt="GICSA"></a></li>
+						<li class="hidden-xs hidden-sm">
+							<form class="navbar-form navbar-left">
+								<div class="form-group">
+									<input type="text" class="form-control input-sm gicsa-search-input">
+								</div>
+							</form>
+						</li>
+						<li class="hidden-xs hidden-sm mag-header-social-icon">
+							<a href="">
+								<img src="img/social-facebook-white.png" alt="Facebook"/>
+							</a>
+						</li>
+						<li class="hidden-xs hidden-sm mag-header-social-icon">
+							<a href="">
+								<img src="img/social-twitter-white.png" alt="Twitter"/>
+							</a>
+						</li>
+						<li class="hidden-xs hidden-sm mag-header-social-icon">
+							<a href="">
+								<img src="img/social-instagram-white.png" alt="Instagram"/>
+							</a>
+						</li>
+						
 					</ul>
 					
 				</div><!-- /.navbar-collapse -->
@@ -68,30 +88,48 @@
 
 <main>
 
-	<div class="container-fluid mag-main-content">
-
+	<div class="container-fluid mag-main-content m-bottom-8">
 		<!--BREADCRUM-->
 		<div class="row">
-			<div class="col-xs-12">
-				<ol class="breadcrumb">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Temáticas</a></li>
-					<li><a href="#">INpiración</a></li>
-					<li class="active">Life by the Sea</li>
-				</ol>
-				<hr/>
-				<h2>Life by the Sea</h2>
-				<p>08/03/17</p>
-			</div>
+			<ol class="breadcrumb">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Temáticas</a></li>
+				<li><a href="#">INpiración</a></li>
+				<li class="active">Life by the Sea</li>
+			</ol>
+			<div class="mag-breadcrumb-divider"></div>
+			<h2 class="mag-page-title">Life by the Sea</h2>
+			<p class="mag-page-date">08/03/17</p>
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container m-bottom-8">
 
 		<!--SLIDER-->
 		<div class="row">
-			<div class="col-xs-12">
-				<img class="img-responsive" src="http://placehold.it/1200x500" alt="Slider"/>
+			<div class="col-xs-12 mag-gallery-wrapper">
+				<div class="mag-gallery-slider-for">
+					<img src="http://placehold.it/1200x500/f15543/ffffff" alt="Slider Img"/>
+					<img src="http://placehold.it/1200x500/42b6ab/ffffff" alt="Slider Img"/>
+					<img src="http://placehold.it/1200x500/db4f70/ffffff" alt="Slider Img"/>
+					<img src="http://placehold.it/1200x500/9d1b32/ffffff" alt="Slider Img"/>
+					<img src="http://placehold.it/1200x500/eb8744/ffffff" alt="Slider Img"/>
+					<img src="http://placehold.it/1200x500/5a5ca2/ffffff" alt="Slider Img"/>
+					<img src="http://placehold.it/1200x500/999999/ffffff" alt="Slider Img"/>
+					<img src="http://placehold.it/1200x500/666666/ffffff" alt="Slider Img"/>
+					<img src="http://placehold.it/1200x500/333333/ffffff" alt="Slider Img"/>
+				</div>
+				<div class="mag-gallery-slider-nav">
+					<img src="http://placehold.it/230x180/f15543/ffffff" alt="Slider Thumb"/>
+					<img src="http://placehold.it/230x180/42b6ab/ffffff" alt="Slider Thumb"/>
+					<img src="http://placehold.it/230x180/db4f70/ffffff" alt="Slider Thumb"/>
+					<img src="http://placehold.it/230x180/9d1b32/ffffff" alt="Slider Thumb"/>
+					<img src="http://placehold.it/230x180/eb8744/ffffff" alt="Slider Thumb"/>
+					<img src="http://placehold.it/230x180/5a5ca2/ffffff" alt="Slider Thumb"/>
+					<img src="http://placehold.it/230x180/999999/ffffff" alt="Slider Thumb"/>
+					<img src="http://placehold.it/230x180/666666/ffffff" alt="Slider Thumb"/>
+					<img src="http://placehold.it/230x180/333333/ffffff" alt="Slider Thumb"/>
+				</div>
 			</div>
 		</div>
 
@@ -104,19 +142,69 @@
 
 				<p>Mollitia reprehenderit vitae veritatis aspernatur expedita doloremque sunt laboriosam, deserunt fugiat, itaque velit deleniti saepe quasi eveniet possimus magnam reiciendis amet consequatur? Ex pariatur facilis sunt debitis. Quod voluptatem aperiam adipisci quasi nisi culpa quo dolores facere harum eveniet, nesciunt officiis totam at autem ipsam magnam repellat explicabo, ducimus molestias veritatis. Blanditiis dolore laudantium ex necessitatibus quos corporis illo ipsa repudiandae voluptatem.  </p>
 
+				<p>
+					<ol>
+						<li><a href="nota-back.html">Nota Back</a></li>
+						<li><a href="nota-fotoparrafo.html">Nota Fotoparrafo</a></li>
+						<li><a href="nota-galeria.html">Nota Galería</a></li>
+						<li><a href="nota-girly.html">Nota Girly</a></li>
+						<li><a href="nota-masonry.html">Nota Masonry</a></li>
+						<li><a href="nota-outfit.html">Nota Outfit</a></li>
+						<li><a href="nota-texto.html">Nota Texto</a></li>
+					</ol>
+				</p>
+
 				<p>Officiis ex, expedita ipsa voluptates similique distinctio quae qui molestias esse! Aspernatur voluptatum suscipit, aliquam id consequatur voluptates atque incidunt expedita, laborum delectus neque illum illo ipsa alias consectetur odit recusandae nam. Obcaecati pariatur, nobis, cumque dicta fugit minima veniam ad illo, mollitia eligendi quia ipsa animi facere maiores totam eius! Iure obcaecati nihil, alias dolor velit, harum sunt quisquam accusamus totam pariatur, at maxime explicabo optio ad temporibus tenetur voluptas cumque unde! Esse ut, non optio neque voluptas at eveniet doloribus adipisci quibusdam maiores minus facilis nemo tempore delectus, voluptate quod dolore dolores voluptatum unde consequatur. Qui quidem dolore, ratione officiis quis esse corporis ullam laborum repudiandae perferendis tenetur perspiciatis, voluptatibus dolores eius magnam.  </p>
 			</div>
 		</div>
+	</div>
 
-		<!--PUBLICIDAD-->
-		<div class="row">
-			<div class="col-xs-12 nopadding">
-				
+	<!--PUBLICIDAD-->
+	<div class="mag-advertising-wrapper">
+		<div class="container">
+			<div class="row mag-advertising">
+				<div class="col-xs-12 col-md-2 nopadding">
+					<h4>Compartir</h4>
+					<ul class="mag-compartir">
+						<li>
+							<a href="">
+								<img src="http://placehold.it/28x28/000000/ffffff?text=FB" alt=""/>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="http://placehold.it/28x28/000000/ffffff?text=TW" alt=""/>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-10 nopadding">
+					<h4>Puedes encontrar algunos productos en:</h4>
+					<div class="mag-advertising-slider">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+						<img src="http://placehold.it/230x100/eeeeee/000000?text=PUBLICIDAD" alt="">
+					</div>
+				</div>
 			</div>
 		</div>
-
-
 	</div>
+
+	<!--BOTONES DE NAVEGACIÓN-->
+	<div class="container-fluid">
+		<div class="row mag-navigation-buttons">
+			<div class="col-xs-6">
+				<a href="" class="btn btn-gicsa btn-navigation prev">Anterior</a>
+			</div>
+			<div class="col-xs-6">
+				<a href="" class="btn btn-gicsa btn-navigation next pull-right">Siguiente</a>
+			</div>
+		</div>
+	</div>
+
 </main>
 
 

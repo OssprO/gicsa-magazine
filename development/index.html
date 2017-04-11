@@ -6,7 +6,7 @@
 	<title>MagazINe | HOME</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
+	
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 
@@ -20,7 +20,7 @@
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -35,28 +35,48 @@
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse" id="navbar-collapse">
 					<ul class="nav navbar-nav navbar-main">
-						<li><a href="/nosotros.html">NOSOTROS</a></li>
-						<li><a href="/nota-base.html">TEMÁTICAS</a></li>
+						<li><a href="nosotros.html">NOSOTROS</a></li>
+						<li><a href="nota-base.html">TEMÁTICAS</a></li>
 						<li><a href="">SECCIONES</a></li>
-						<li><a href="/sociales.html">SOCIALES</a></li>
-						<li><a href="/promociones.html">PROMOCIONES</a></li>
-						<li><a href="">PRODUCTOS</a></li>
+						<li><a href="sociales.html">SOCIALES</a></li>
+						<li><a href="promociones.html">PROMOCIONES</a></li>
+						<li><a href="#">EVENTOS</a></li>
+						<li><a href="concurso.html">CONCURSOS</a></li>
 						<li><a href="contacto.html">CONTACTO</a></li>
 					</ul>
 					
-					<form class="navbar-form navbar-left">
-						<div class="form-group">
-							<input type="text" class="form-control input-sm" placeholder="Search">
-						</div>
-					</form>
+					<div class="logo-gicsa">
+						<a href="">
+							<img src="img/gicsalogo.png" alt="GICSA"/>
+						</a>
+					</div>
 					
 					<ul class="nav navbar-nav navbar-right navbar-social">
-						<li><a href=""><img src="img/facebook.png" alt="Facebook"/></a></li>
-						<li><a href=""><img src="img/twitter.png" alt="Twitter"/></a></li>
-						<li><a href=""><img src="img/instagram.png" alt="Instagram"/></a></li>
-						<li class="logo-gicsa"><a href=""><img src="img/gicsalogo.png" alt="GICSA"></a></li>
+						<li class="hidden-xs hidden-sm">
+							<form class="navbar-form navbar-left">
+								<div class="form-group">
+									<input type="text" class="form-control input-sm gicsa-search-input">
+								</div>
+							</form>
+						</li>
+						<li class="hidden-xs hidden-sm mag-header-social-icon">
+							<a href="">
+								<img src="img/social-facebook-white.png" alt="Facebook"/>
+							</a>
+						</li>
+						<li class="hidden-xs hidden-sm mag-header-social-icon">
+							<a href="">
+								<img src="img/social-twitter-white.png" alt="Twitter"/>
+							</a>
+						</li>
+						<li class="hidden-xs hidden-sm mag-header-social-icon">
+							<a href="">
+								<img src="img/social-instagram-white.png" alt="Instagram"/>
+							</a>
+						</li>
+						
 					</ul>
 					
 				</div><!-- /.navbar-collapse -->
@@ -68,10 +88,7 @@
 
 
 <main>
-
-	<div class="container-fluid">
-		
-
+	<div class="container">
 		<!--SLIDER-->
 		<div class="row">
 			<div class="mag-main-slider">
@@ -80,41 +97,150 @@
 				<img src="http://placehold.it/1200x500/333333/0185CD?text=SLIDER03" alt="Slider Element 03"/>
 				<img src="http://placehold.it/1200x500/333333/7862f4?text=SLIDER04" alt="Slider Element 04"/>
 			</div>
-			
 		</div>
-
 
 		<!--CONTENIDO-->
 		<div class="row">
-			<div class="mag-home-note note-1">
-				<div class="note-container">
-					<h2>Elegancia que florece</h2>
-					<p>Telas vaporosas y brillo resplandeciente para impactar a quien te encuentre: </p>
-					<ol>
-						<li>Esmalte, Channel en tono Ballerina</li>
-						<li>Perfume Rose des Vents, LOUIS VUITTON</li>
-						<li>Paleta Pure Color Envy, Estee Lauder</li>
-						<li>Volupré Tint-In-Balm, Yves Saint Laurent </li>
-						<li>Pendientes Stars, Hsterm</li>
-						<li>Vestide, Bebe</li>
-						<li>Zapatos, Aldo</li>
-						<li>They're Real Double The Lip</li>
-					</ol>
-					<div class="note-sharing">
-						<div class="col-xs-6 nopadding"></div>
+			<div class="mag-home">
+				<div class="mag-home-note note-1">
+					<div class="note-container">
+						<h2>Elegancia que florece</h2>
+						<p>Telas vaporosas y brillo resplandeciente para impactar a quien te encuentre: </p>
+						<ol>
+							<li>Esmalte, Channel en tono Ballerina</li>
+							<li>Perfume Rose des Vents, LOUIS VUITTON</li>
+							<li>Paleta Pure Color Envy, Estee Lauder</li>
+							<li>Volupré Tint-In-Balm, Yves Saint Laurent </li>
+							<li>Pendientes Stars, Hsterm</li>
+							<li>Vestide, Bebe</li>
+							<li>Zapatos, Aldo</li>
+							<li>They're Real Double The Lip</li>
+						</ol>
+						<div class="note-sharing">
+							<div class="col-xs-6 nopadding text-left">
+								<ul>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=FB" alt=""></a></li>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=TW" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="col-xs-6 nopadding text-right">
+								<a class="mag-ver-mas" href="">VER MÁS...</a>
+							</div>
+						</div>
+					</div>
+					<div class="note-img">
+						<img class="" src="http://placehold.it/280x400" alt=""/>
 					</div>
 				</div>
-				<div class="note-img">
-					<img class="img-responsive" src="http://placehold.it/280x400" alt=""/>
+
+				<div class="mag-home-note note-2">
+					<div class="note-img">
+						<img class="" src="http://placehold.it/260x280" alt=""/>
+					</div>
+					<div class="note-container">
+						<h2>Aquí va el título</h2>
+						<p>La lente de grandes cineastas ha caido seducida por esta prende , que desde el primer momento se convirtió en todo un statement fashionista. Meryl Streep, Audrey Heoburn, Catherin Deneuve; todas ellas ha llevado en más de una ocasión esta pieza, que Thomas Burberry clama haber inventado en 1879. </p>
+						<div class="note-sharing">
+							<div class="col-xs-6 nopadding text-left">
+								<ul>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=FB" alt=""></a></li>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=TW" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="col-xs-6 nopadding text-right">
+								<a class="mag-ver-mas" href="">VER MÁS...</a>
+							</div>
+						</div>
+					</div>
 				</div>
 				
+				<div class="mag-home-note note-3">
+					<div class="note-container">
+						<h2>Aquí va el título</h2>
+						<p>La lente de grandes cineastas ha caido seducida por esta prende , que desde el primer momento se convirtió en todo un statement fashionista. Meryl Streep, Audrey Heoburn, Catherin Deneuve; todas ellas ha llevado en más de una ocasión esta pieza, que Thomas Burberry clama haber inventado en 1879. </p>
+						<p>La lente de grandes cineastas ha caido seducida por esta prende , que desde el primer momento se convirtió en todo un statement fashionista. Meryl Streep, Audrey Heoburn, Catherin Deneuve; todas ellas ha llevado en más de una ocasión esta pieza, que Thomas Burberry clama haber inventado en 1879. </p>
+						<p>La lente de grandes cineastas ha caido seducida por esta prende , que desde el primer momento se convirtió en todo un statement fashionista. Meryl Streep, Audrey Heoburn, Catherin Deneuve. </p>
+						<div class="note-sharing">
+							<div class="col-xs-6 nopadding text-left">
+								<ul>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=FB" alt=""></a></li>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=TW" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="col-xs-6 nopadding text-right">
+								<a class="mag-ver-mas" href="">VER MÁS...</a>
+							</div>
+						</div>
+					</div>
+					<div class="note-img">
+						<img class="img-fullwidth" src="http://placehold.it/400x280" alt=""/>
+					</div>
+				</div>
+				
+				<div class="mag-home-note note-4">
+					<div class="note-img">
+						<img class="img-fullwidth" src="http://placehold.it/400x250" alt=""/>
+					</div>
+					<div class="note-container">
+						<h2>Aquí va el título</h2>
+						<p>La primavera trae consigo una época de absoluta reinvención. Esto también incluye una selección distinta para el guardarropa, con prendas más ligeras para un estilo renovado.</p>
+						<div class="note-sharing">
+							<div class="col-xs-6 nopadding text-left">
+								<ul>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=FB" alt=""></a></li>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=TW" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="col-xs-6 nopadding text-right">
+								<a class="mag-ver-mas" href="">VER MÁS...</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="mag-home-note note-5">
+					<div class="note-container">
+						<h2>Cineteca</h2>
+						<p>Hace años que abrió sus puertas para deleitar  y orientar a los amantes.</p>
+						<div class="note-sharing">
+							<div class="col-xs-6 nopadding text-left">
+								<ul>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=FB" alt=""></a></li>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=TW" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="col-xs-6 nopadding text-right">
+								<a class="mag-ver-mas" href="">VER MÁS...</a>
+							</div>
+						</div>
+					</div>
+					<div class="note-img">
+						<img class="img-fullwidth" src="http://placehold.it/400x120" alt=""/>
+					</div>
+				</div>
+				
+				<div class="mag-home-note note-6">
+					<div class="note-img">
+						<img class="" src="http://placehold.it/400x280" alt=""/>
+					</div>
+					<div class="note-container">
+						<h2>Aquí va el título</h2>
+						<p>Este actor y productor nacido en Aguascalientes ha estado activo desde el año 2003. Desde pequeño supo que deseaba seguir un camino distinto al de sus padres, quienes son médicos, y encontró en la actuación la inspiración.</p>
+						<div class="note-sharing">
+							<div class="col-xs-6 nopadding text-left">
+								<ul>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=FB" alt=""></a></li>
+									<li><a href=""><img src="http://placehold.it/25/ffffff/000000?text=TW" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="col-xs-6 nopadding text-right">
+								<a class="mag-ver-mas" href="">VER MÁS...</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			</div>
-			<!--<div class="mag-home-note note-2"><img class="img-responsive" src="http://placehold.it/400x960" alt=""/></div>
-			<div class="mag-home-note note-3"><img class="img-responsive" src="http://placehold.it/800x280" alt=""/></div>
-			<div class="mag-home-note note-4"><img class="img-responsive" src="http://placehold.it/400x560" alt=""/></div>
-			<div class="mag-home-note note-5"><img class="img-responsive" src="http://placehold.it/400x280" alt=""/></div>
-			<div class="mag-home-note note-6"><img class="img-responsive" src="http://placehold.it/800x280" alt=""/></div>-->
 		</div>
 
 		<!--PUBLICIDAD-->
@@ -267,6 +393,11 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('.mag-main-slider').slick();
+
+		$('.mag-home').masonry({
+			itemSelector: '.mag-home-note',
+			columnWidth: 400
+		});
 	});
 
 </script>

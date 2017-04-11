@@ -4,11 +4,53 @@
 
 @import 'shame';
 
+
+//Fonts
+
+@font-face {
+  font-family: 'AvenirLTStd-Light';
+  src: url('../fonts/AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvenirLTStd-Light.otf')  format('opentype'),
+	     url('../fonts/AvenirLTStd-Light.woff') format('woff'), url('../fonts/AvenirLTStd-Light.ttf')  format('truetype'), url('../fonts/AvenirLTStd-Light.svg#AvenirLTStd-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'AvenirLTStd-Roman';
+  src: url('../fonts/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvenirLTStd-Roman.otf')  format('opentype'),
+	     url('../fonts/AvenirLTStd-Roman.woff') format('woff'), url('../fonts/AvenirLTStd-Roman.ttf')  format('truetype'), url('../fonts/AvenirLTStd-Roman.svg#AvenirLTStd-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'AvenirLTStd-Heavy';
+  src: url('../fonts/AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvenirLTStd-Heavy.otf')  format('opentype'),
+	     url('../fonts/AvenirLTStd-Heavy.woff') format('woff'), url('../fonts/AvenirLTStd-Heavy.ttf')  format('truetype'), url('../fonts/AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-BlackOblique';
+  src: url('../fonts/AvenirLTStd-BlackOblique.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvenirLTStd-BlackOblique.otf')  format('opentype'),
+	     url('../fonts/AvenirLTStd-BlackOblique.woff') format('woff'), url('../fonts/AvenirLTStd-BlackOblique.ttf')  format('truetype'), url('../fonts/AvenirLTStd-BlackOblique.svg#AvenirLTStd-BlackOblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 //Generales
 
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+
+a {
+	color: black;
 }
 
 body {
@@ -27,7 +69,7 @@ body {
 			}
 		}
 		.mag-home-note {
-			@for $i from 1 to length($paleta01) {
+			@for $i from 1 to length($paleta01)+1 {
 			    &.note-#{$i} {
 			    	.note-container {
 			    		background-color: nth($paleta01, $i); 
@@ -53,7 +95,7 @@ body {
 			}
 		}
 		.mag-home-note {
-			@for $i from 1 to length($paleta02) {
+			@for $i from 1 to length($paleta02)+1 {
 			    &.note-#{$i} {
 			    	.note-container {
 			    		background-color: nth($paleta02, $i); 
@@ -78,7 +120,7 @@ body {
 			}
 		}
 		.mag-home-note {
-			@for $i from 1 to length($paleta03) {
+			@for $i from 1 to length($paleta03)+1 {
 			    &.note-#{$i} {
 			    	.note-container {
 			    		background-color: nth($paleta03, $i); 
@@ -100,6 +142,38 @@ body {
     background-color: transparent;
     border-radius: 0;
     font-size: 1.25em;
+
+    a {
+    	@include cl-effect-1(.3);
+    	text-decoration: none;
+    	
+    	color: inherit;
+
+    	&:hover {
+    		//font-weight: bold;
+    	}
+    }
+}
+
+h2.mag-page-title {
+	font-size: 2.5em;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 60px;
+	color: $gray;
+}
+
+h2.mag-page-subtitle {
+	font-size: 2.5em;
+	font-weight: bold;
+	font-style: italic;
+	color: $gray;
+	max-width: 50%;
+}
+
+p.mag-page-date {
+	font-size: 18px;
+	margin-left: 60px;
 }
 
 .mag-breadcrumb-divider {
@@ -114,6 +188,24 @@ body {
 
 //Text
 
+p {
+	font-family: 'AvenirLTStd', sans-serif;
+	font-size: 17px;
+	line-height: 23px;
+	margin: 0 0 30px;
+
+}
+
+ol, ul {
+	li {
+		font-size: 17px;
+		a {
+
+		}
+	}
+}
+
+
 //Images
 .img-fullwidth {
 	width: 100%;
@@ -123,7 +215,7 @@ body {
 //Header
 header {
 	.navbar {
-		height: 70px;
+		height: auto;
 		margin-bottom: 0px;
 		border: none;
 	}
@@ -133,18 +225,39 @@ header {
 
 		.navbar-header {
 			.navbar-brand-wrapper {
-				width: 260px;
-				height: 50px;
+				float: left;
 				.navbar-brand {
-					position: absolute;
-					z-index: 1;
-					max-width: 275px;
-					padding: 15px 10px;
-					height: 80px; 
+					
+					padding: 5px;
+					
 					background-color: black;
-					box-shadow: 1px 1px 8px #5f5f5f;
 					.navbar-brand-img {
-						width: 100%;
+						width: 170px;
+					}
+				}
+			}
+
+			.navbar-toggle {
+				float: none;
+				border: none;
+				margin: 6px;
+				padding: 2px;
+				border-radius: 0;
+
+				.icon-bar {
+					width: 28px;
+					margin: 6px;
+					background-color: $gray-lighter;
+					height: 3px;
+				}
+
+
+				&:focus, &:hover {
+					background-color: $gray;
+
+					.icon-bar {
+						background-color: black;
+						
 					}
 				}
 			}
@@ -164,32 +277,58 @@ header {
 					padding: 10px;
 					//padding-top: 10px;
 					color: white;
-					font-size: 12px;
+					font-family: 'AvenirLTStd-Heavy';
+					font-size: 11px;
+					
+					&:hover {
+						color: #5a5a5a;
+					}
 				}
 			}
 		}
 
 		form.navbar-form {
-			margin-bottom: 18px;
-			margin-top: 18px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+
+		.logo-gicsa {
+			margin: 18px -15px 0 10px;
+			float: right;
+		}
+
+		.navbar-right {
+			margin: 0;
 		}
 
 		ul.navbar-social {
 			li {
 				margin-bottom: 9px;
 				margin-top: 9px;
-				
-				&.logo-gicsa {
-					margin-bottom: 3px;
-					margin-top: 3px;
-				}
 
+				&.mag-header-social-icon {
+					img {
+						max-width: 18px;
+						height: auto;
+					}
+				}
+				
 				a {
 					padding-left: 10px;
 					padding-right: 10px;
+
+
 				}
 			}
 		}
+	}
+}
+
+//Slick Overrides
+.slick-prev, .slick-next {
+	&:before {
+		height: 20px;
+		top: 0;
 	}
 }
 
@@ -197,9 +336,17 @@ header {
 
 main {
 
+	&.mag-back {
+		min-height: 1175px;
+	}
+
 	.mag-main-slider {
 		width: 100%;
-		max-height: 500px;
+		max-height: 550px;
+		img {
+			height: auto;
+		}
+		
 	}
 
 
@@ -207,12 +354,37 @@ main {
 		margin-top: 35px;
 	}
 
-	.mag-back-bg {
-		background-image: url(img/mag-back-bg.jpg);
+	.mag-back-wrapper {
+		min-height: 1100px;
+		overflow: hidden;
+		position: relative;
+	
+		.mag-back-bg {
+			//background: url(.../fonts/./img/mag-back-bg.jpg) no-repeat center center;
+			
+			position: absolute;
+			z-index: -1;
+			width: 100%;
 
-		.mag-back-text-bg {
-			background-color: rgba(255,255,255,.5);
+			img {
+				width: 100%;
+			}
 		}
+	}
+
+	.mag-back-title {
+		h1 {
+			font-size: 60px;
+			margin-top: 40px;
+		}
+	}
+
+	.mag-back-text-bg {
+		background-color: rgba(255,255,255,.5);
+		padding: 35px;
+		margin-top: 50px;
+
+		
 	}
 	
 	.mag-fotoparrafo {
@@ -249,27 +421,258 @@ main {
 		margin-bottom: 40px;
 	}
 
+	
+
+	//Notas
+
+	.mag-gallery-wrapper {
+		@extend .m-bottom-4;
+
+		.mag-gallery-slider-for {
+			min-height: 500px;
+			img {
+				height: auto;
+			}
+		}
+
+		.mag-gallery-slider-nav {
+			background-color: $gray;
+			min-height: 170px;
+			height: auto;
+			img {
+				height: auto;
+				margin: 10px 5px;
+			}
+		}
+	}
+
+	//Sociales
+	.mag-sociales-nota {
+		@extend .m-bottom-10;
+
+		&.mag-sociales-nota-uno {
+			background-color: #454545;
+		}
+
+		&.mag-sociales-nota-dos {
+			background-color: #757575;
+		}
+
+		&.mag-sociales-nota-tres {
+			background-color: #959595;	
+		}
+
+		color: white;
+		min-height: 380px;
+
+
+		.sociales-contenido {
+			padding: 40px 60px 0 40px !important;
+
+			h3 {
+				font-weight: bold;
+				font-style: italic;
+			}
+			.sociales-contenido-date {
+				font-family: 'AvenirLTStd', sans-serif;
+				font-size: 18px;
+			}
+			.sociales-contenido-texto, .sociales-contenido-texto > p {
+				font-family: 'AvenirLTStd', sans-serif;
+				font-size: 16px;
+			}
+		}
+
+		.sociales-img {
+			
+		}
+	}
+
+	//Fotoparrafo
+	.mag-fotoparrafo {
+		@extend .m-bottom-10;
+
+		&.mag-fotoparrafo-uno {
+			background-color: #0e0d12;
+		}
+
+		&.mag-fotoparrafo-dos {
+			background-color: #5e7e52;
+		}
+
+		&.mag-fotoparrafo-tres {
+			background-color: #88898f;	
+		}
+
+		color: white;
+		min-height: 380px;
+
+
+		.mag-fotoparrafo-contenido {
+			padding: 40px 60px 0 40px !important;
+
+			h3 {
+				font-weight: bold;
+				font-style: italic;
+			}
+			.fotoparrafo-contenido-texto, .fotoparrafo-contenido-texto > p {
+				font-family: 'AvenirLTStd', sans-serif;
+				font-size: 16px;
+			}
+		}
+
+		.fotoparrafo-img {
+			
+		}
+	}
+
+	//Galería
+	.mag-gallery-element {
+		margin-bottom: 20px; 
+		.mag-gallery-element-footer {
+			font-size: 18px;
+			text-align: right;
+		}
+	}
+
+	//Texto
+	.mag-header-img {
+
+	}
+
 	.mag-texto-slider {
 		float: left;
 		clear: both;
 		margin-right: 30px;
 		margin-bottom: 30px;
+
+		width: 530px;
+
+		img {
+			height: auto;
+		}
+	}
+
+	//Promociones
+	.mag-promocion-element {
+		@extend .m-bottom-8;
+		.promocion-subtitulo {
+			margin-top: 3px;
+			margin-bottom: 1px;
+		}
+		.promocion-vigencia {
+			margin: 0;
+		}
+		.promocion-descripcion {
+			text-align: justify;
+		}
+	}
+
+	//Concurso 
+	.mag-concurso-slider {
+		img {
+			height: auto;
+		}
+	}
+
+	//Nota Masonry
+	.mag-note-masonry {
+		max-width: 100%;
+		margin: 1px auto;
+
+		&:after {
+			content: '';
+		  	display: block;
+		  	clear: both;
+		}
+
+		.note-masonry {
+			margin: 10px;
+			float: left;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+			}
+
+			.note-masonry-footer {
+				margin-top: 2px;
+				margin-bottom: 5px;
+			}
+
+			&.note-masonry-1 {
+				width: 380px;
+				height: 405px;
+			}
+			&.note-masonry-2 {
+				width: 380px;
+				height: 405px;
+				text-align: center;
+				padding: 140px 0;
+				h2 {
+					font-size: 38px;
+					font-weight: bold;
+					font-style: italic;
+				}
+			}
+			&.note-masonry-3 {
+				width: 380px;
+				height: 405px;
+			}
+			&.note-masonry-4 {
+				width: 780px;
+				height: 405px;
+			}
+			&.note-masonry-5 {
+				width: 380px;
+				height: 825px;
+			}
+			&.note-masonry-6 {
+				width: 380px;
+				height: 405px;
+			}
+			&.note-masonry-7 {
+				width: 380px;
+				height: 405px;
+			}
+		}
+	}
+	
+}
+
+.mag-home {
+	max-width: 100%;
+	//background: #EEE;
+
+	margin: 1px auto;
+
+	&:after {
+		content: '';
+	  	display: block;
+	  	clear: both;
 	}
 }
 
+$mag-tile-width: 400px;
+$mag-tile-height: 280px;
+
 .mag-home-note {
-	//float: left;
+	float: left;
 	color: white;
 	font-size: 16px;
 
+	//padding: 1px;
+
 	overflow: hidden;
-	display: flex;
-	
 
 	.note-container {
 		float: left;
-		padding: 20px 30px;
+		padding: 20px 20px;
 		//background-color: #f15543;
+
+		h2 {
+			margin-top: 0;
+		}
 
 		ol, ul {
 			padding: 1em;
@@ -277,33 +680,100 @@ main {
 	}
 
 	.note-sharing {
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				margin-right: 15px;
+			}
+		}
 
+		.mag-ver-mas {
+			display: block;
+			margin-top: 10px;
+			font-size: 0.75em;
+			color: white;
+			text-decoration: underline;
+			&:hover {
+				color: white;
+			}
+		}
 	}
 
 	.note-img {
-		float: left;
+		//float: left;
 	}
 
-	/*
+	
 	&.note-1 {
-		width: 66.65%;
+		width: $mag-tile-width*2;
+		height: $mag-tile-width;
+		.note-container {
+			width: 520px;
+			height: 100%;
+		}
+		.note-img {
+			width: 280px;
+			float: left;
+		}
 	}
 	&.note-2 {
-		width: 33.32%;
+		width: $mag-tile-width*2;
+		height: $mag-tile-height;
+		.note-container {
+			width: 540px;
+			height: 100%;
+		}
+		.note-img {
+			width: 260px;
+			float: left;
+		}
 	}
 	&.note-3 {
-		width: 66.6%;
+		width: $mag-tile-width;
+		height: 960px;
+		.note-container {
+			height: 680px;
+		}
+		.note-img {
+			clear: both;
+		}
 	}
 	&.note-4 {
-		width: 33.32%;
+		width: $mag-tile-width;
+		height: $mag-tile-height*2;
+		.note-container {
+			height: 315px;
+		}
+		.note-img {
+			clear: both;
+		}
 	}
 	&.note-5 {
-		width: 33.32%;
+		width: $mag-tile-width;
+		height: $mag-tile-height;
+		.note-container {
+			height: 160px;
+		}
+		.note-img {
+			clear: both;
+		}
+
 	}
 	&.note-6 {
-		width: 66.6%;
+		width: $mag-tile-width*2;
+		height: $mag-tile-height;
+		.note-container {
+			width: $mag-tile-width;
+			height: 100%;
+		}
+		.note-img {
+			width: $mag-tile-width;
+			float: left;
+		}
 	}
-	*/
+	
 }
 
 
@@ -349,6 +819,157 @@ section{
 	}
 }
 
+//Forms 
+
+.marg-form {
+	input, textarea {
+		background-color: $gray-lighter;
+		border-radius: 0;
+		color: $gray;
+		font-size: 14px;
+	}
+
+	textarea {
+		max-width: 100%; 
+	}
+
+	.dropdown {
+		.dropdown-toggle {
+			background-color: $gray-lighter;
+			border-radius: 0;
+			color: $gray;
+			font-size: 14px;
+			text-align: left;
+			width: 100%;
+
+			.caret {
+				float: right;
+    			margin-top: 9px;
+			}
+		}
+	}
+	/*
+	button {
+		&.btn-gicsa {
+			font-size: 14px;
+			color: white;
+			min-width: 130px;
+			background-color: black;
+			border: 1px solid $gray-light;
+			border-radius: 0;
+			padding-top: 3px;
+			padding-bottom: 0px;
+		}
+	}*/
+}
+
+.gicsa-search-input {
+	background-color: $gray;
+	border: 1px solid $gray;
+	border-radius: 0;
+	color: $gray;
+	font-size: 14px;
+	width: 105px !important;
+	height: 24px;
+    margin-top: 3px;
+}
+
+button, a {
+	&.btn-gicsa {
+		font-size: 14px;
+		line-height: 24px;
+		color: white;
+		min-width: 130px;
+		background-color: black;
+		border: 1px solid $gray-light;
+		border-radius: 0;
+		padding-top: 3px;
+		padding-bottom: 0px;
+	}
+
+	&.btn-navigation {
+		font-size: 19px;
+	    line-height: 20px;
+	    height: 30px;
+	    font-style: italic;
+	    font-weight: 700;
+
+		&.prev {
+			background: black url('../fonts/../img/left.png') no-repeat left center;
+		}
+		&.next {
+			background: black url('../fonts/../img/right.png') no-repeat right center;
+		}
+	}
+
+	&:hover {
+		color: #5a5a5a;
+	}
+}
+select.select-gicsa {
+	background-color: #000;
+	font-size: 17px;
+	color: white;
+	min-width: 100%;
+	-webkit-border-radius: 0px;
+   	-moz-border-radius: 0px;
+   	border-radius: 0px;
+
+   	-webkit-appearance: none;
+
+   	background-image: url('../fonts/../img/down.png');
+   	background-repeat: no-repeat;
+   	background-position: right 10px center;
+
+	height: 28px;
+    padding-left: 10px;
+}
+
+
+//General Sharing & Advertising
+
+.mag-advertising-wrapper {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	//margin-bottom: 20px;
+
+	.mag-advertising {
+		h4 {
+			font-style: italic;
+			font-weight: bold;
+		}
+
+		.mag-advertising-slider {
+			min-height: 120px;
+			margin-bottom: 20px;
+			img {
+				margin: 5px;
+				height: auto;
+			}
+
+		}
+	}
+}
+
+ul.mag-compartir {
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		margin-right: 15px;
+
+		img {
+			max-height: 24px;
+			width: auto;
+		}
+	}
+}
+
+.mag-navigation-buttons {
+	margin: 20px 0;
+}
+
+
 //Footer
 
 footer {
@@ -371,7 +992,7 @@ footer {
 }
 
 
-//Margenes
+//Margins
 
 $spacing: 5px;
 @include maring-and-padding-spacing($spacing);
@@ -389,6 +1010,64 @@ $spacing: 5px;
 	}
 	.m-horizontal-#{$i} {
 		@extend %margin-horizontal-#{$i}x;
+	}
+}
+
+
+//Media Queries
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+$screen-sm-min: 768px;
+@media (min-width: $screen-sm-min) { 
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+$screen-md-min: 992px;
+@media (min-width: $screen-md-min) {
+
+	header {
+		.navbar {
+			height: 70px;
+		}
+		.navbar-default {
+
+			.navbar-header {
+				.navbar-brand-wrapper {
+					width: 260px;
+					height: 50px;
+					.navbar-brand {
+						position: absolute;
+						z-index: 1;
+						max-width: 275px;
+						padding: 15px 10px;
+						height: 80px; 
+						background-color: black;
+						box-shadow: 1px 1px 8px #5f5f5f;
+						.navbar-brand-img {
+							width: 100%;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+$screen-lg-min: 1200px;
+@media (min-width: $screen-lg-min) {
+	.container {
+		width: 1200px;
+	}
+
+	.marg-form {
+		margin: 0 30px;
 	}
 }
 
