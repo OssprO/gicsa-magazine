@@ -185,6 +185,7 @@ p {
 
 ol, ul {
 	li {
+		font-family: 'AvenirLTStd-Light', sans-serif;
 		font-size: 17px;
 		a {
 
@@ -654,136 +655,6 @@ main {
 		margin: 0 0 15px;
 	}
 }
-
-$mag-tile-width: 400px;
-$mag-tile-height: 280px;
-
-.mag-home-note {
-	float: left;
-	color: white;
-	font-size: 16px;
-
-	//padding: 1px;
-
-	overflow: hidden;
-
-	.note-container {
-		float: left;
-		padding: 20px 20px;
-		//background-color: #f15543;
-
-		h2 {
-			margin-top: 0;
-		}
-
-		ol, ul {
-			padding: 1em;
-		}
-	}
-
-	.note-sharing {
-		ul {
-			margin: 0;
-			padding: 0;
-			li {
-				display: inline-block;
-				margin-right: 15px;
-
-				img {
-					max-height: 24px;
-					width: auto;
-				}
-			}
-		}
-
-		.mag-ver-mas {
-			display: block;
-			margin-top: 10px;
-			font-size: 0.75em;
-			color: white;
-			text-decoration: underline;
-			&:hover {
-				color: white;
-			}
-		}
-	}
-
-	.note-img {
-		//float: left;
-	}
-
-	
-	&.note-1 {
-		width: $mag-tile-width*2;
-		height: $mag-tile-width;
-		.note-container {
-			width: 520px;
-			height: 100%;
-		}
-		.note-img {
-			width: 280px;
-			float: left;
-		}
-	}
-	&.note-2 {
-		width: $mag-tile-width*2;
-		height: $mag-tile-height;
-		.note-container {
-			width: 540px;
-			height: 100%;
-		}
-		.note-img {
-			width: 260px;
-			float: left;
-		}
-	}
-	&.note-3 {
-		width: $mag-tile-width;
-		height: 960px;
-		.note-container {
-			height: 680px;
-		}
-		.note-img {
-			clear: both;
-		}
-	}
-	&.note-4 {
-		width: $mag-tile-width;
-		height: $mag-tile-height*2;
-		.note-container {
-			height: 315px;
-		}
-		.note-img {
-			clear: both;
-		}
-	}
-	&.note-5 {
-		width: $mag-tile-width;
-		height: $mag-tile-height;
-		.note-container {
-			height: 160px;
-		}
-		.note-img {
-			clear: both;
-		}
-
-	}
-	&.note-6 {
-		width: $mag-tile-width*2;
-		height: $mag-tile-height;
-		.note-container {
-			width: $mag-tile-width;
-			height: 100%;
-		}
-		.note-img {
-			width: $mag-tile-width;
-			float: left;
-		}
-	}
-	
-}
-
-
 
 section{
 	.gicsa-newsletter-bar {
