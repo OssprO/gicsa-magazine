@@ -17,7 +17,17 @@
 		asNavFor: '.mag-gallery-slider-for',
 		dots: false,
 		centerMode: true,
-		focusOnSelect: true
+		focusOnSelect: true,
+		responsive: [
+		    {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+		    }
+		    
+		]
 	});
 
 	$('.mag-texto-slider').slick({
@@ -33,7 +43,8 @@
 
 	//Publicidad
 	$('.mag-advertising-slider').slick({
-		
+		slidesToShow: 3,
+		slidesToScroll: 1,
 		dots: false,
 		centerMode: true,
 		focusOnSelect: true,
@@ -64,6 +75,36 @@
 		    // instead of a settings object
 		]
 	});
+
+
+	//Cargar más Sociales
+	$('.mag-sociales-nota').slice(0, 3).show();
+    
+    $('#cargarMasSociales').on('click', function (e) {
+        e.preventDefault();
+        $('.mag-sociales-nota:hidden').slice(0, 3).slideDown();
+        if ($('.mag-sociales-nota:hidden').length == 0) {
+            $('#load').fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+
+
+    //Cargar más Sociales
+	$('.mag-fotoparrafo').slice(0, 3).show();
+    
+    $('#cargarMasFotoparrafo').on('click', function (e) {
+        e.preventDefault();
+        $('.mag-fotoparrafo:hidden').slice(0, 3).slideDown();
+        if ($('.mag-fotoparrafo:hidden').length == 0) {
+            $('#load').fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
 
 
 })();
