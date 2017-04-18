@@ -654,6 +654,17 @@ main {
 	p {
 		margin: 0 0 15px;
 	}
+
+	.note-text {
+		height: 175px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+
+	.note-img {
+		overflow: hidden;
+		max-height: 240px;
+	}
 }
 
 section{
@@ -1166,6 +1177,18 @@ $screen-lg-min: 1200px;
 
 	.marg-form {
 		margin: 0 30px;
+	}
+
+	.mag-home {
+		.note-text {
+			height: initial;
+			overflow: unset;
+			margin-bottom: 0px;
+		}
+		.note-img {
+			overflow: unset;
+			max-height: initial;
+		}
 	}
 }
 

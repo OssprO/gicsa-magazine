@@ -79,8 +79,15 @@ $screen-lg-min: 1200px;
 				font-size: 30px;
 			}
 
+			p {
+				font-size: 17px;
+			}
+
 			ol, ul {
 				padding: 1em;
+				li {
+					font-size: 17px;
+				}
 			}
 		}
 
