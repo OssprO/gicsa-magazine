@@ -3,7 +3,7 @@
 <head lang="es">
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MagazINe | HOME</title>
+	<title>MagazINe | TEMÁTICAS</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/temp.css"/>
 </head>
 <!--Puede ser mag-template-1, mag-template-2 o mag-template-3-->
-<body class="mag-template-2">
+<body class="mag-template-3">
 
 <header>
 	<!--<div class="container">-->
@@ -96,20 +96,11 @@
 
 <main>
 	<div class="container">
-		<!--SLIDER-->
-		<div class="row">
-			<div class="mag-main-slider">
-				<img src="http://placehold.it/1200x500/333333/98de82?text=SLIDER01" alt="Slider Element 01"/>
-				<img src="http://placehold.it/1200x500/333333/cd1245?text=SLIDER02" alt="Slider Element 02"/>
-				<img src="http://placehold.it/1200x500/333333/0185CD?text=SLIDER03" alt="Slider Element 03"/>
-				<img src="http://placehold.it/1200x500/333333/7862f4?text=SLIDER04" alt="Slider Element 04"/>
-			</div>
-		</div>
 
 		<!--CONTENIDO-->
 		<div class="row">
-			<div class="mag-home">
-				<div class="mag-home-note note-1">
+			<div class="mag-tematicas">
+				<div class="mag-tematicas-note note-1">
 					<div class="note-container">
 						<div class="note-text">
 							<h2>Elegancia que florece</h2>
@@ -143,7 +134,7 @@
 					</div>
 				</div>
 
-				<div class="mag-home-note note-2">
+				<div class="mag-tematicas-note note-2">
 					<div class="note-img">
 						<img class="note-img-desktop hidden-xs hidden-sm hidden-md" src="http://placehold.it/260x280" alt=""/>
 						<img class="note-img-mobile hidden-lg" src="http://placehold.it/280x400" alt=""/>
@@ -167,7 +158,7 @@
 					</div>
 				</div>
 				
-				<div class="mag-home-note note-3">
+				<div class="mag-tematicas-note note-3">
 					<div class="note-container">
 						<div class="note-text">
 							<h2>Aquí va el título</h2>
@@ -193,7 +184,7 @@
 					</div>
 				</div>
 				
-				<div class="mag-home-note note-4">
+				<div class="mag-tematicas-note note-4">
 					<div class="note-img">
 						<img class="note-img-desktop hidden-xs hidden-sm hidden-md" src="http://placehold.it/400x250" alt=""/>
 						<img class="note-img-mobile hidden-lg" src="http://placehold.it/280x400" alt=""/>
@@ -217,7 +208,7 @@
 					</div>
 				</div>
 				
-				<div class="mag-home-note note-5">
+				<div class="mag-tematicas-note note-5">
 					<div class="note-container">
 						<div class="note-text">
 							<h2>Cineteca</h2>
@@ -241,7 +232,7 @@
 					</div>
 				</div>
 				
-				<div class="mag-home-note note-6">
+				<div class="mag-tematicas-note note-6">
 					<div class="note-img">
 						<img class="note-img-desktop hidden-xs hidden-sm hidden-md" src="http://placehold.it/400x280" alt=""/>
 						<img class="note-img-mobile hidden-lg" src="http://placehold.it/280x400" alt=""/>
@@ -267,17 +258,6 @@
 
 			</div>
 		</div>
-
-		<!--PUBLICIDAD-->
-		<div class="row">
-			<div class="col-xs-6 nopadding-xs-up">
-				<img class="img-responsive" src="http://placehold.it/650x500" alt=""/>
-			</div>
-			<div class="col-xs-6 nopadding-xs-up">
-				<img class="img-responsive" src="http://placehold.it/650x500" alt=""/>
-			</div>
-		</div>
-
 
 	</div>
 </main>
@@ -377,8 +357,8 @@
 	$(document).ready(function(){
 		$('.mag-main-slider').slick();
 
-		$('.mag-home').masonry({
-			itemSelector: '.mag-home-note',
+		$('.mag-tematicas').masonry({
+			itemSelector: '.mag-tematicas-note',
 			columnWidth: 400
 		});
 	});

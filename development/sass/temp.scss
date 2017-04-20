@@ -1,6 +1,6 @@
 @import 'base/variables';
 
-.mag-home-note {
+.mag-home-note, .mag-tematicas-note, .mag-secciones-note {
 	float: left;
 	color: white;
 
@@ -10,6 +10,7 @@
 		width: 65%;
 		float: left;
 		padding: 10px;
+		position: relative; 
 
 		h2 {
 			font-size: 16px;
@@ -36,6 +37,11 @@
 	}
 
 	.note-sharing {
+		position: absolute;
+	    width: 100%;
+	    bottom: 15px;
+	    left: 0px;
+
 		ul {
 			margin: 0;
 			padding: 0;
@@ -66,7 +72,7 @@
 /* Large devices (large desktops, 1200px and up) */
 $screen-lg-min: 1200px;
 @media (min-width: $screen-lg-min) {
-	.mag-home-note {
+	.mag-home-note, .mag-tematicas-note, .mag-secciones-note {
 		font-size: 16px;
 		overflow: hidden;
 
@@ -99,6 +105,7 @@ $screen-lg-min: 1200px;
 
 		.note-sharing {
 			ul {
+				padding: 0;
 				li {
 					img {
 						max-height: 24px;
