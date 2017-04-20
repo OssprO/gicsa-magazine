@@ -30,13 +30,28 @@
 		]
 	});
 
+	//Nota Texto
 	$('.mag-texto-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		fade: true,
 	});
 
+	//Concurso
 	$('.mag-concurso-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+
+	//Sociales
+	$('.sociales-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+
+
+	//Nosotros
+	$('.nosotros-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1
 	});
