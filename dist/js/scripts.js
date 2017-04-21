@@ -121,5 +121,13 @@
         }, 1500);
     });
 
+    //Dropdowns de Navbar 
+    $('#tematicasDropdown').on('mouseenter mouseleave click tap', function() {
+		$(this).toggleClass("open");
+	});
+	$('#seccionesDropdown').on('mouseenter mouseleave click tap', function() {
+		$(this).toggleClass("open");
+	});
+
 
 })();

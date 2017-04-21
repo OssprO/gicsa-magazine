@@ -42,8 +42,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'development/css/styles.css': 'development/sass/styles.scss',
-          'development/css/temp.css': 'development/sass/temp.scss'
+          'development/css/styles.css': 'development/sass/styles.scss'
         }
       }
     },

@@ -11,7 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 
 	<link rel="stylesheet" href="css/styles.css"/>
-	<link rel="stylesheet" href="css/temp.css"/>
 </head>
 <!--Puede ser mag-template-1, mag-template-2 o mag-template-3-->
 <body class="mag-template-2">
@@ -67,8 +66,8 @@
 					<ul class="nav navbar-nav navbar-main">
 						<li><a href="nosotros.html">NOSOTROS</a></li>
 						<!--<li><a href="tematicas.html">TEMÁTICAS</a></li>-->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TEMÁTICAS</span></a>
+						<li id="tematicasDropdown" class="dropdown">
+							<a href="tematicas.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">TEMÁTICAS</span></a>
 							<ul class="dropdown-menu">
 								<li><a href="nota-back.html">Nota Back</a></li>
 								<li><a href="nota-base.html">Nota Base</a></li>
@@ -82,8 +81,8 @@
 							</ul>
 						</li>
 						<!--<li><a href="secciones.html">SECCIONES</a></li>-->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SECCIONES</span></a>
+						<li id="seccionesDropdown" class="dropdown">
+							<a href="secciones.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">SECCIONES</span></a>
 							<ul class="dropdown-menu">
 								<li><a href="nota-back.html">Nota Back</a></li>
 								<li><a href="nota-base.html">Nota Base</a></li>
@@ -433,7 +432,11 @@
 			itemSelector: '.mag-home-note',
 			columnWidth: 400
 		});
+
+
 	});
+
+
 
 </script>
 

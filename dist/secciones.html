@@ -11,7 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 
 	<link rel="stylesheet" href="css/styles.css"/>
-	<link rel="stylesheet" href="css/temp.css"/>
 </head>
 <!--Puede ser mag-template-1, mag-template-2 o mag-template-3-->
 <body class="mag-template-1">
@@ -34,21 +33,41 @@
 						</a>
 					</div>
 
-					<div class="logo-gicsa hidden-md hidden-lg">
+					<div class="logo-gicsa hidden-lg">
 						<a href="">
 							<img src="img/gicsalogo.png" alt="GICSA"/>
 						</a>
 					</div>
+
+					<div class="boton-search-gicsa hidden-lg">
+						<button class="btn btn-xs btn-link" role="button" data-toggle="collapse" href="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
+							<img class="icono" src="img/search-white.png" alt="Busqueda"/>
+						</button>
+					</div>
 					
 				</div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse search-gicsa" id="collapseSearch">
+					
+					<form class="search-gicsa-form form-inline" action="">
+						<div class="form-group">
+							
+							<div class="input-group">
+								<input class="search-gicsa-input form-control" type="text" placeholder="Busqueda...">
+								<div class="input-group-addon">
+									<button type="submit" class="btn btn-default btn-search-gicsa pull-right">Ir</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
 				<div class="collapse navbar-collapse" id="navbar-collapse">
 					<ul class="nav navbar-nav navbar-main">
 						<li><a href="nosotros.html">NOSOTROS</a></li>
 						<!--<li><a href="tematicas.html">TEMÁTICAS</a></li>-->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TEMÁTICAS</span></a>
+						<li id="tematicasDropdown" class="dropdown">
+							<a href="tematicas.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">TEMÁTICAS</span></a>
 							<ul class="dropdown-menu">
 								<li><a href="nota-back.html">Nota Back</a></li>
 								<li><a href="nota-base.html">Nota Base</a></li>
@@ -62,8 +81,8 @@
 							</ul>
 						</li>
 						<!--<li><a href="secciones.html">SECCIONES</a></li>-->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SECCIONES</span></a>
+						<li id="seccionesDropdown" class="dropdown">
+							<a href="secciones.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">SECCIONES</span></a>
 							<ul class="dropdown-menu">
 								<li><a href="nota-back.html">Nota Back</a></li>
 								<li><a href="nota-base.html">Nota Base</a></li>
@@ -82,15 +101,19 @@
 						<li><a href="concurso.html">CONCURSOS</a></li>
 						<li><a href="contacto.html">CONTACTO</a></li>
 					</ul>
+
+
 					
 					<div class="logo-gicsa hidden-xs hidden-sm">
 						<a href="">
 							<img src="img/gicsalogo.png" alt="GICSA"/>
 						</a>
 					</div>
+
+
 					
 					
-					<ul class="nav navbar-nav navbar-right navbar-social hidden-xs hidden-sm">
+					<ul class="nav navbar-nav navbar-right navbar-social hidden-xs hidden-sm hidden-md">
 						<li>
 							<form class="navbar-form navbar-left">
 								<div class="form-group">
