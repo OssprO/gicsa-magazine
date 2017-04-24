@@ -20,34 +20,54 @@
  }" data-collapsed="@mixin clearfix() { ... }"><code>@mixin clearfix() { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Marcin Kwiatkowski kontakt@marcin-kwiatkowski.com clearfix float elements</p></li></ul></section><section class="main__item container item" id="undefined-mixin-maring-and-padding-spacing"><h3 class="item__heading"><a class="item__name" href="#mixin-maring-and-padding-spacing">maring-and-padding-spacing</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin maring-and-padding-spacing() { 
     @for $i from 1 to 11 {
         // Margin
-        %margin-#{$i}x { margin: $spacing * $i; }
+        %margin-#{$i}x {
+            margin: $spacing * $i; 
+        }
 
-        %margin-top-#{$i}x, 
-        %margin-vertical-#{$i}x { margin-top: $spacing * $i; }
+        %margin-top:;{$i}x, 
+        %margin-vertical-#{$i}x { 
+            margin-top: $spacing * $i; 
+        }
 
         %margin-bottom-#{$i}x,
-        %margin-vertical-#{$i}x { margin-bottom: $spacing * $i; }
+        %margin-vertical-#{$i}x { 
+            margin-bottom: $spacing * $i; 
+        }
 
         %margin-left-#{$i}x,
-        %margin-horizontal-#{$i}x { margin-left: $spacing * $i; }
+        %margin-horizontal-#{$i}x { 
+            margin-left: $spacing * $i; 
+        }
 
         %margin-right-#{$i}x,
-        %margin-horizontal-#{$i}x { margin-right: $spacing * $i; }
+        %margin-horizontal-#{$i}x { 
+            margin-right: $spacing * $i; 
+        }
 
         // Padding
-        %padding-#{$i}x { padding: $spacing * $i; }
+        %padding-#{$i}x { 
+            padding: $spacing * $i; 
+        }
 
         %padding-top-#{$i}x,
-        %padding-vertical-#{$i}x { padding-top: $spacing * $i; }
+        %padding-vertical-#{$i}x { 
+            padding-top: $spacing * $i; 
+        }
 
         %padding-bottom-#{$i}x,
-        %padding-vertical-#{$i}x{ padding-bottom: $spacing * $i; }
+        %padding-vertical-#{$i}x{ 
+            padding-bottom: $spacing * $i; 
+        }
 
         %padding-left-#{$i}x,
-        %padding-horizontal-#{$i}x { padding-left: $spacing * $i; }
+        %padding-horizontal-#{$i}x { 
+            padding-left: $spacing * $i; 
+        }
 
         %padding-right-#{$i}x,
-        %padding-horizontal-#{$i}x{ padding-right: $spacing * $i; }
+        %padding-horizontal-#{$i}x{ 
+            padding-right: $spacing * $i; 
+        }
     }
  }" data-collapsed="@mixin maring-and-padding-spacing() { ... }"><code>@mixin maring-and-padding-spacing() { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Jason Lock <a href="https://codepen.io/jasonjlock/pen/glkKw">https://codepen.io/jasonjlock/pen/glkKw</a> Margin and padding SCSS mixing</p></li></ul></section><section class="main__item container item" id="undefined-mixin-cl-effect-1"><h3 class="item__heading"><a class="item__name" href="#mixin-cl-effect-1">cl-effect-1</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin cl-effect-1() { 
     &amp;::before,
