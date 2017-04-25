@@ -42,7 +42,7 @@
             margin: $spacing * $i; 
         }
 
-        %margin-top:;{$i}x, 
+        %margin-top-#{$i}x, 
         %margin-vertical-#{$i}x { 
             margin-top: $spacing * $i; 
         }
