@@ -1608,7 +1608,7 @@ $screen-lg-min: 1200px;
         float: none !important;
     }
     .navbar-toggle {
-        display: initial;
+        display: inline-block;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
