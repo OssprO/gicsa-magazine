@@ -950,7 +950,9 @@ select.select-gicsa {
 			margin-bottom: 20px;
 			img {
 				margin: 5px;
-				height: auto;
+				max-height: 100px;
+				//max-width: 230px;
+				margin: auto;
 			}
 
 		}
