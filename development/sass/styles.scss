@@ -1483,6 +1483,9 @@ $screen-lg-min: 1200px;
 	.mag-home-note, .mag-tematicas-note, .mag-secciones-note {
 		font-size: 16px;
 		overflow: hidden;
+		display: block;
+		//float: left;
+		//position: relative !important;
 
 		.note-container {
 			width: 100%;
@@ -1524,32 +1527,35 @@ $screen-lg-min: 1200px;
 
 		
 		&.note-1 {
-			width: $mag-tile-width*2;
+			width: 66.66%;//$mag-tile-width*2;
 			height: $mag-tile-width;
+			float: right;
 			.note-container {
-				width: 520px;
+				width: 67.5%;
 				height: 100%;
 			}
 			.note-img {
-				width: 280px;
+				width: 32.5%;
 				float: left;
 			}
 		}
 		&.note-2 {
-			width: $mag-tile-width*2;
+			width: 66.66%;//$mag-tile-width*2;
 			height: $mag-tile-height;
+			float: right;
 			.note-container {
-				width: 540px;
+				width: 67.5%;
 				height: 100%;
 			}
 			.note-img {
-				width: 260px;
+				width: 32.5%;
 				float: left;
 			}
 		}
 		&.note-3 {
-			width: $mag-tile-width;
+			width: 33.33%;//$mag-tile-width;
 			height: 960px;
+			float: right;
 			.note-container {
 				height: 680px;
 			}
@@ -1558,18 +1564,20 @@ $screen-lg-min: 1200px;
 			}
 		}
 		&.note-4 {
-			width: $mag-tile-width;
+			width: 33.33%;//$mag-tile-width;
 			height: $mag-tile-height*2;
+			float: left;
 			.note-container {
-				height: 315px;
+				height: 295px;
 			}
 			.note-img {
 				clear: both;
 			}
 		}
 		&.note-5 {
-			width: $mag-tile-width;
+			width: 33.33%;//$mag-tile-width;
 			height: $mag-tile-height;
+			float: left;
 			.note-container {
 				height: 160px;
 			}
@@ -1579,14 +1587,15 @@ $screen-lg-min: 1200px;
 
 		}
 		&.note-6 {
-			width: $mag-tile-width*2;
+			width: 66.66%;//$mag-tile-width*2;
 			height: $mag-tile-height;
+			float: right;
 			.note-container {
-				width: $mag-tile-width;
+				width: 50%;
 				height: 100%;
 			}
 			.note-img {
-				width: $mag-tile-width;
+				width: 50%;
 				float: left;
 			}
 		}
