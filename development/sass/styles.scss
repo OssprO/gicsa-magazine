@@ -460,8 +460,19 @@ main {
 		max-height: 550px;
 		img {
 			height: auto;
+			&.slider-img {
+				width: 100%;
+			}
 		}
 		
+	}
+
+	.mag-advertising {
+		.mag-advertising-uno, .mag-advertising-dos {
+			img {
+				width: 100%;
+			}
+		}
 	}
 
 	.mag-back-wrapper {

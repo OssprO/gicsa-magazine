@@ -145,10 +145,10 @@
 		<!--SLIDER-->
 		<div class="row">
 			<div class="mag-main-slider">
-				<a href=""><img src="http://placehold.it/1280x510/333333/98de82?text=SLIDER01" alt="Slider Element 01"/></a>
-				<a href=""><img src="http://placehold.it/1280x510/333333/cd1245?text=SLIDER02" alt="Slider Element 02"/></a>
-				<a href=""><img src="http://placehold.it/1280x510/333333/0185CD?text=SLIDER03" alt="Slider Element 03"/></a>
-				<a href=""><img src="http://placehold.it/1280x510/333333/7862f4?text=SLIDER04" alt="Slider Element 04"/></a>
+				<a href=""><img class="slider-img" src="http://placehold.it/1280x510/333333/98de82?text=SLIDER01" alt="Slider Element 01"/></a>
+				<a href=""><img class="slider-img" src="http://placehold.it/1280x510/333333/cd1245?text=SLIDER02" alt="Slider Element 02"/></a>
+				<a href=""><img class="slider-img" src="http://placehold.it/1280x510/333333/0185CD?text=SLIDER03" alt="Slider Element 03"/></a>
+				<a href=""><img class="slider-img" src="http://placehold.it/1280x510/333333/7862f4?text=SLIDER04" alt="Slider Element 04"/></a>
 			</div>
 		</div>
 
@@ -321,12 +321,16 @@
 		</div>
 
 		<!--PUBLICIDAD-->
-		<div class="row">
+		<div class="row mag-advertising">
 			<div class="col-xs-6 nopadding-xs-up">
-				<img class="img-responsive" src="http://placehold.it/650x500" alt=""/>
+				<a class="mag-advertising-uno" href="">
+					<img class="img-responsive" src="http://placehold.it/650x500" alt=""/>
+				</a>
 			</div>
 			<div class="col-xs-6 nopadding-xs-up">
-				<img class="img-responsive" src="http://placehold.it/650x500" alt=""/>
+				<a class="mag-advertising-dos" href="">
+					<img class="img-responsive" src="http://placehold.it/650x500" alt=""/>
+				</a>
 			</div>
 		</div>
 
@@ -431,7 +435,7 @@
 		
 		$('.mag-home').masonry({
 			itemSelector: '.mag-home-note',
-			isFitWidth: true,
+			//isFitWidth: true,
 			//alignLTR: true
 			isOriginLeft : false
 		});
