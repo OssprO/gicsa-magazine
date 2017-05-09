@@ -80,8 +80,20 @@ body {
 			        
 			    }
 			}
-			
 		}
+		
+		//Para Index Masonry Columns
+		.mag-note {
+			@for $i from 1 to length($paleta01)+1 {
+				&.mag-note-#{$i} {
+					.mag-note-container {
+						background-color: nth($paleta01, $i);
+					}
+				}
+			}
+		}
+
+
 		
 	}
 	&.mag-template-2 {
@@ -110,7 +122,17 @@ body {
 			        
 			    }
 			}
-			
+		}
+
+		//Para Index Masonry Columns
+		.mag-note {
+			@for $i from 1 to length($paleta02)+1 {
+				&.mag-note-#{$i} {
+					.mag-note-container {
+						background-color: nth($paleta02, $i);
+					}
+				}
+			}
 		}
 	}
 	&.mag-template-3 {
@@ -140,6 +162,17 @@ body {
 			    }
 			}
 			
+		}
+
+		//Para Index Masonry Columns
+		.mag-note {
+			@for $i from 1 to length($paleta03)+1 {
+				&.mag-note-#{$i} {
+					.mag-note-container {
+						background-color: nth($paleta03, $i);
+					}
+				}
+			}
 		}
 	}
 }
@@ -446,6 +479,88 @@ header {
 		}
 	}
 }
+
+
+//Nuevo INDEX
+
+.mag-home-columns {
+	background-color: $gray;
+}
+
+.mag-home-columns-width {
+	width: 24%;
+}
+
+.mag-note {
+	float: left;
+	overflow: hidden;
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+	.mag-note-img-wrapper {
+		.mag-note-image {
+			width: 100%;
+		}
+	}
+	.mag-note-container {
+		padding: 15px;
+
+		.mag-note-text {
+			color: white;
+
+			h2.mag-note-title, .mag-note-title {
+				font-size: 30px;
+				margin-top: 0;
+				margin-bottom: 5px;
+			}
+			h3.mag-note-date, .mag-note-date {
+				font-size: 20px;
+				margin-top: 0;
+				margin-bottom: 10px; 
+			}
+			p.mag-note-content, .mag-note-content {
+				font-size: 17px;
+				margin-bottom: 15px;
+				margin-top: 15px;
+			}
+		}
+		.mag-note-sharing {
+			margin-top: 20px;
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					display: inline-block;
+					margin-right: 15px;
+
+					img {
+						max-height: 20px;
+						width: auto;
+					}
+				}
+			}
+
+			a.mag-note-ver-mas {
+			    font-size: .75em;
+				color: white;
+				margin-top: 10px;
+			    text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 //Main
 
