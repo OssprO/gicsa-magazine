@@ -848,6 +848,67 @@ main {
 		}
 	}
 
+	//Eventos
+
+	.gicsa-input-white {
+		border-radius: 0;
+		border: 1px solid black;
+		width: 60%;
+		float: left;
+	}
+
+	.gicsa-select-inline {
+		width: 30%;
+		float: left;
+		select {
+			height: 34px;
+		}
+	}
+
+	.mag-event-past-links {
+		margin-bottom: 50px;
+		text-decoration: underline;
+		display: block;
+	}
+
+	.mag-event {
+		margin-bottom: 20px;
+		display: none;
+
+		.mag-event-img-wrapper {
+			img {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+		.mag-event-content {
+			.mag-event-date {
+				font-size: 16px;
+				margin-bottom: 5px;
+			}
+			.mag-event-title {
+				font-size: 20px;
+				margin-top: 0px;
+				margin-bottom: 5px;
+				font-weight: bold;
+				color: black;
+			}
+			.mag-event-place {
+				text-decoration: underline;
+				font-weight: bold;
+				margin-bottom: 15px;
+				font-size: 20px;
+				display: block;
+			}
+			.mag-event-text {
+				
+			}
+			.mag-event-button-wrapper {
+				
+			}
+		}
+	}
+
 	//Nota Masonry
 	.mag-note-masonry {
 		max-width: 100%;
