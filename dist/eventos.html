@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MagazINe | EVENTOS</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+	<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!--HEADER-->
+<header>
+	<!--<div class="container">-->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand-wrapper">
+						<a class="navbar-brand" href="/">
+							<img class="navbar-brand-img" src="img/logo-mag.png" alt="MagazINe">
+						</a>
+					</div>
+
+					<div class="logo-gicsa hidden-lg">
+						<a href="">
+							<img src="img/gicsalogo.png" alt="GICSA"/>
+						</a>
+					</div>
+
+					<div class="boton-search-gicsa hidden-lg">
+						<button class="btn btn-xs btn-link" role="button" data-toggle="collapse" href="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
+							<img class="icono" src="img/search-white.png" alt="Busqueda"/>
+						</button>
+					</div>
+					
+				</div>
+
+				<div class="collapse search-gicsa" id="collapseSearch">
+					
+					<form class="search-gicsa-form form-inline" action="">
+						<div class="form-group">
+							
+							<div class="input-group">
+								<input class="search-gicsa-input form-control" type="text" placeholder="Busqueda...">
+								<div class="input-group-addon">
+									<button type="submit" class="btn btn-default btn-search-gicsa pull-right">Ir</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav navbar-main">
+						<li><a href="nosotros.html">NOSOTROS</a></li>
+						<!--<li><a href="tematicas.html">TEMÁTICAS</a></li>-->
+						<li id="tematicasDropdown" class="dropdown">
+							<a href="tematicas.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">TEMÁTICAS</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="nota-back.html">Nota Back</a></li>
+								<li><a href="nota-base.html">Nota Base</a></li>
+								<li><a href="nota-fotoparrafo.html">Nota Fotoparrafo</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="nota-galeria.html">Nota Galeria</a></li>
+								<li><a href="nota-girly.html">Nota Girly</a></li>
+								<li><a href="nota-masonry.html">Nota Masonry</a></li>
+								<li><a href="nota-outfit.html">Nota Outfit</a></li>
+								<li><a href="nota-texto.html">Nota Texto</a></li>
+							</ul>
+						</li>
+						<!--<li><a href="secciones.html">SECCIONES</a></li>-->
+						<li id="seccionesDropdown" class="dropdown">
+							<a href="secciones.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">SECCIONES</span></a>
+							<ul class="dropdown-menu">
+								<li><a href="nota-back.html">Nota Back</a></li>
+								<li><a href="nota-base.html">Nota Base</a></li>
+								<li><a href="nota-fotoparrafo.html">Nota Fotoparrafo</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="nota-galeria.html">Nota Galeria</a></li>
+								<li><a href="nota-girly.html">Nota Girly</a></li>
+								<li><a href="nota-masonry.html">Nota Masonry</a></li>
+								<li><a href="nota-outfit.html">Nota Outfit</a></li>
+								<li><a href="nota-texto.html">Nota Texto</a></li>
+							</ul>
+						</li>
+						<li><a href="sociales.html">SOCIALES</a></li>
+						<li><a href="promociones.html">PROMOCIONES</a></li>
+						<li><a href="eventos.html">EVENTOS</a></li>
+						<li><a href="concurso.html">CONCURSOS</a></li>
+						<li><a href="contacto.html">CONTACTO</a></li>
+					</ul>
+
+
+					
+					<div class="logo-gicsa hidden-xs hidden-sm hidden-md">
+						<a href="">
+							<img src="img/gicsalogo.png" alt="GICSA"/>
+						</a>
+					</div>
+
+
+					
+					
+					<ul class="nav navbar-nav navbar-right navbar-social hidden-xs hidden-sm hidden-md">
+						<li>
+							<form class="navbar-form navbar-left">
+								<div class="form-group">
+									<input type="text" class="form-control input-sm gicsa-search-input">
+								</div>
+							</form>
+						</li>
+						<li class="mag-header-social-icon">
+							<a href="">
+								<img src="img/social-facebook-white.png" alt="Facebook"/>
+							</a>
+						</li>
+						<li class="mag-header-social-icon">
+							<a href="">
+								<img src="img/social-twitter-white.png" alt="Twitter"/>
+							</a>
+						</li>
+						<li class="mag-header-social-icon">
+							<a href="">
+								<img src="img/social-instagram-white.png" alt="Instagram"/>
+							</a>
+						</li>
+						
+					</ul>
+					
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	<!--</div>-->
+</header>
+
+<main>
+
+	<div class="container-fluid mag-main-content">
+		<!--BREADCRUM-->
+		<div class="row breadcrumb-wrapper">
+			<ol class="breadcrumb">
+				<li><a href="#">Inicio</a></li>
+				<li class="active">Eventos</li>
+			</ol>
+			<div class="mag-breadcrumb-divider"></div>
+			
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!--BUSQUEDA-->
+		<div class="row m-bottom-8">
+			<div class="col-xs-12 col-md-offset-1 col-md-10">
+				
+				<input type="text" class="form-control gicsa-input-white" id="exampleInputAmount" placeholder="EVENTOS">
+				
+				<div class="gicsa-select-inline">
+					<select class="select-gicsa pull-right " name="Tienda" id="">
+						<option value="">CENTRO COMERCIAL</option>
+						<option value="">CENTRO COMERCIAL 01</option>
+						<option value="">CENTRO COMERCIAL 02</option>
+						<option value="">CENTRO COMERCIAL 03</option>
+					</select>
+				</div>
+				
+
+			</div>
+		</div>
+
+		<a class="mag-event-past-links" href="">¿BUSCAS EVENTOS ANTERIORES?</a>
+
+		<!--CONTENIDO-->
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x450" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x300" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x400" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x350" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x270" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x340" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x450" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x300" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x400" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x350" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x270" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mag-event">
+			<div class="col-xs-12 col-md-7 mag-event-img-wrapper">
+				<img src="http://placehold.it/800x340" alt=""/>
+			</div>
+			<div class="col-xs-12 col-md-5 mag-event-content">
+				<p class="mag-event-date">08/06/17</p>
+				<h3 class="mag-event-title">Nombre del Evento</h3>
+				<a class="mag-event-place" href="">LUGAR DEL EVENTO</a>
+				<p class="mag-event-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat, nobis autem accusamus enim earum nemo rem quis, veritatis ex nihil omnis tempora.</p>
+				<div class="row m-bottom-8 mag-event-button-wrapper">
+					<div class="col-xs-12">
+						<button id="cargarMasSociales" class="btn btn-gicsa">VER MÁS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row m-bottom-8">
+			<div class="col-xs-12 text-center">
+				<button id="cargarMasEventos" class="btn btn-gicsa">CARGAR MÁS</button>
+			</div>
+		</div>
+
+	</div>
+</main>
+
+
+<section class="apps hidden-xs hidden-sm">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Newsletter -->
+			<form action="">
+				<div class="gicsa-newsletter-bar">
+					<div class="col-md-9 hidden-xs">
+						<div class="row gicsa-newsletter-bar-wrapper">
+							<div class="col-md-offset-1 col-md-7 text-right">								
+								SUSCRIBETE A NUESTRO NEWSLETTER ¡Y recibe todas nuestras promociones!
+							</div>
+							<div class="col-md-4">								
+								<input type="email" class="gicsa-input-xs">
+								<button type="submit" class="btn gicsa-btn-xs" href="">ENVIAR</button>																
+							</div>							
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-md-3">
+						<div class="row gicsa-appstore-wrapper">
+							<div class="col-xs-6 col-md-6 text-right">
+								<a href="">
+									<img class="gicsa-appstore-icon " src="img/appstore.png" alt=""/>
+								</a>
+							</div>
+							<div class="col-xs-6 col-md-6">
+								<a href="">
+									<img class="gicsa-appstore-icon" src="img/googleplay.png" alt=""/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<!-- /Newsletter -->
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="container-fluid">
+		<div class="row">
+			
+			<div class="col-xs-12 text-center-xs col-md-offset-0 col-md-7 text-left-md">
+				<div class="gicsa-footer-logo">
+					<img src="img/logo_footer.png" alt="Gicsa">
+				</div>
+			</div>
+
+			
+			<div class="col-xs-12 text-center-xs col-md-5 gicsa-footer-list">
+				<div class="row gicsa-footer-list-element">
+					<div class="col-xs-12 col-md-3 text-right-md">FORUM</div>
+					<div class="col-xs-12 col-md-9 text-left-md">Buenavista | Coatzacoalcos | Cuernavaca | Tepic | Tlaquepaque</div>
+				</div>
+				<div class="row gicsa-footer-list-element">
+					<div class="col-xs-12 col-md-3 text-right-md">PASEO</div>
+					<div class="col-xs-12 col-md-9 text-left-md">Arcos Bosques | Coapa | Querétano | Metepec | Xochimilco</div>
+				</div>
+				<div class="row gicsa-footer-list-element">
+					<div class="col-xs-12 col-md-3 text-right-md">LA ISLA</div>
+					<div class="col-xs-12 col-md-9 text-left-md">Acapulco | Cabo Norte | Cancún | Mérida | Playa del Carmen | Puerto Vallarta</div>
+				</div>
+				<div class="row gicsa-footer-list-element">
+					<div class="col-xs-12 col-md-3 text-right-md">PLAZAS OUTLET</div>
+					<div class="col-xs-12 col-md-9 text-left-md">Cancún | Guadalajara | Lerma | Monterrey | Norte | Riviera Maya | Sur</div>
+				</div>
+				<div class="row gicsa-footer-list-element">
+					<div class="col-xs-12 col-md-3 text-right-md">EXPLANADA</div>
+					<div class="col-xs-12 col-md-9 text-left-md">Culiacán | Querétano | León | Pachuca | Puebla</div>
+				</div>
+			</div>
+				
+		</div>
+	</div>
+</footer>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

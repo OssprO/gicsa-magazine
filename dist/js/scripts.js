@@ -107,7 +107,7 @@
     });
 
 
-    //Cargar más Sociales
+    //Cargar más Fotoparrafo
 	$('.mag-fotoparrafo').slice(0, 3).show();
     
     $('#cargarMasFotoparrafo').on('click', function (e) {
@@ -121,6 +121,20 @@
         }, 1500);
     });
 
+    //Cargar más Eventos
+	$('.mag-event').slice(0, 3).show();
+    
+    $('#cargarMasEventos').on('click', function (e) {
+        e.preventDefault();
+        $('.mag-event:hidden').slice(0, 3).slideDown();
+        if ($('.mag-event:hidden').length == 0) {
+            $('#load').fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+    
     //Dropdowns de Navbar 
     $('#tematicasDropdown').on('mouseenter mouseleave click tap', function() {
 		$(this).toggleClass("open");
