@@ -321,8 +321,9 @@
 						</div>
 					</div>
 				</div>
-
-				<a id="next" href="masonry-notes/masonry-columns-2.html"></a>
+				
+				<!--Aquí se incluye la ruta al JSON-->
+				<a id="next" href="masonry-notes/masonry-data-2.json"></a>
 
 			</div>
 		</div>
@@ -435,6 +436,7 @@
 	$(document).ready(function(){
 		$('.mag-main-slider').slick();
 
+		$('.mag-home').masonry();
 
 		$('.mag-home').imagesLoaded(function(){
 			$('.mag-home').masonry({
@@ -444,6 +446,75 @@
 			});
 		});
 
+		var _renderItem = function(data) {
+			var dataTemplate = "";
+			
+
+			dataTemplate += '<div class="mag-note mag-note-'+ data.type +' col-xs-12 col-sm-'+ data.size +'">';
+			dataTemplate += '	<div class="mag-note-img-wrapper">';
+			dataTemplate += '		<img class="mag-note-image" src="'+ data.image +'" alt=""/>';
+			dataTemplate += '	</div>';
+			dataTemplate += '	<div class="mag-note-container">';
+			dataTemplate += '		<div class="mag-note-text">';
+			dataTemplate += '			<h2 class="mag-note-title">'+ data.title +'</h2>';
+			dataTemplate += '			<h3 class="mag-note-date">'+ data.date +'</h3>';
+			dataTemplate += '			<p class="mag-note-content">'+ data.excerpt +'</p>';
+			dataTemplate += '		</div>';
+			dataTemplate += '		<div class="mag-note-sharing">';
+			dataTemplate += '			<div class="row">';
+			dataTemplate += '				<div class="col-xs-6 text-left">';
+			dataTemplate += '					<ul>';
+			dataTemplate += '						<li><a href=""><img src="img/social-facebook-white.png" alt=""></a></li>';
+			dataTemplate += '						<li><a href=""><img src="img/social-twitter-white.png" alt=""></a></li>';
+			dataTemplate += '					</ul>';
+			dataTemplate += '				</div>';
+			dataTemplate += '				<div class="col-xs-6 text-right">';
+			dataTemplate += '					<a class="mag-note-ver-mas" href="'+ data.url +'">VER MÁS...</a>';
+			dataTemplate += '				</div>';
+			dataTemplate += '			</div>';
+			dataTemplate += '		</div>';
+			dataTemplate += '	</div>';
+			dataTemplate += '</div>';
+
+
+			return dataTemplate;
+		}
+		
+		
+		$('.mag-home').infinitescroll({
+			navSelector  	: "#next:last",
+			nextSelector 	: "a#next:last",
+			itemSelector	: ".mag-note",
+			debug		 	: true,
+			path: ["masonry-notes/masonry-data-", ".json"],
+			loading: {
+				finishedMsg	: 'No more pages to load.'
+			},
+			template: function( response ) {
+				var jsonData = response.posts;
+				var newItems = new Array();
+				for(var i = 0; i < jsonData.length; i++) {
+					var item = _renderItem(jsonData[i]);
+					newItems.push($(item)[0]);
+				}
+				return newItems;
+			},
+			dataType	 	: 'json',
+		}, 
+			function( newElements ) {
+				_addMasonryItem(newElements);
+		});
+		
+
+		var _addMasonryItem = function( newElements ) {
+			var $newElems = $(newElements).css({ opacity: 0 });
+			$newElems.imagesLoaded(function(){
+				$newElems.animate({ opacity: 1 });
+				$('.mag-home').masonry( 'appended', $newElems, true );
+			});
+		}
+
+		/*
 		$('.mag-home').infinitescroll({
 			navSelector  	: "#next:last",
 			nextSelector 	: "a#next:last",
@@ -454,20 +525,12 @@
 				finishedMsg	: 'No more pages to load.'
 				}
 			},
-
 			// Trigger Masonry as a callback
 			function( newElements ) {
-				// hide new items while they are loading
-				var $newElems = $( newElements ).css({ opacity: 0 });
-				// ensure that images load before adding to masonry layout
-				$newElems.imagesLoaded(function(){
-					// show elems now they're ready
-					$newElems.animate({ opacity: 1 });
-					$('.mag-home').masonry( 'appended', $newElems, true );
-				});
-
+				_addMasonryItem(newElements);
 		});
-
+		*/
+		
 		
 	});
 </script>
