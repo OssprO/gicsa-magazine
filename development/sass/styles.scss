@@ -54,6 +54,15 @@ a {
 }
 
 body {
+	&.footer-fixed{
+		footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+		}
+		margin-bottom: 195px;
+	}
+
 	&.mag-template-1 {
 		header {
 			.navbar-default {
@@ -408,6 +417,7 @@ header {
 	&:before {
 		height: 20px;
 		top: 0;
+		background-repeat: no-repeat;
 	}
 }
 
@@ -591,20 +601,18 @@ main {
 	}
 
 	.mag-back-wrapper {
-		min-height: 1100px;
+		min-height: 1000px;
 		overflow: hidden;
 		position: relative;
 	
 		.mag-back-bg {
-			//background: url(.../fonts/./img/mag-back-bg.jpg) no-repeat center center;
-			
 			position: absolute;
 			z-index: -1;
 			width: 100%;
 
 			img {
-				min-width: 100%;
-				height: 1200px;
+				width: 100%;
+				height: auto;
 			}
 		}
 	}
@@ -961,46 +969,47 @@ main {
 
 
 
-section{
-	.gicsa-newsletter-bar {
-		min-height: 40px;
-		padding-top: 5px;
-		color: white;
 
-		.gicsa-newsletter-bar-wrapper {
-			background-color: $gray-dark;
-			height: 35px;
-			padding-top: 7px;
+.gicsa-newsletter-bar {
+	color: white;
+	background-color: white;
+	overflow: hidden;
 
-			.gicsa-input-xs {
-				font-size: 12px;
-				background-color: $gray-light;
-				border: 1px solid $gray-light;
-			}
+	.gicsa-newsletter-bar-wrapper {
+		background-color: $gray-dark;
+		min-height: 35px;
+		padding-top: 7px;
 
-			.gicsa-btn-xs {
-				font-size: 12px;
-				color: white;
-				min-width: 130px;
-				background-color: black;
-				border: 1px solid $gray-light;
-				border-radius: 0;
-				padding-top: 3px;
-				padding-bottom: 0px;
-
-				margin-left: 18px;
-			}
+		.gicsa-input-xs {
+			font-size: 12px;
+			background-color: $gray-light;
+			border: 1px solid $gray-light;
 		}
 
-		.gicsa-appstore-wrapper {
-			.gicsa-appstore-icon {
-				max-height: 30px;
-				padding-top: 2px;
-			}
+		.gicsa-btn-xs {
+			font-size: 12px;
+			color: white;
+			min-width: 130px;
+			background-color: black;
+			border: 1px solid $gray-light;
+			border-radius: 0;
+			padding-top: 3px;
+			padding-bottom: 0px;
 
+			margin-left: 18px;
 		}
 	}
+
+	.gicsa-appstore-wrapper {
+
+		.gicsa-appstore-icon {
+			max-height: 30px;
+			padding-top: 2px;
+		}
+
+	}
 }
+
 
 //Forms 
 
