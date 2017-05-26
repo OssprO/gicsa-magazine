@@ -201,6 +201,18 @@ body {
 
     text-transform: uppercase;
 	font-family: 'AvenirLTStd-BlackOblique';
+
+	&.inverted {
+		a{
+			color: white;
+		}
+		li {
+			&.active {
+				color: white;
+			}
+		}
+		
+	}
 }
 
 h2.mag-page-title {
