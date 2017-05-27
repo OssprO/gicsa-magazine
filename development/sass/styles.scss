@@ -618,8 +618,8 @@ main {
 		position: relative;
 	
 		.mag-back-bg {
-			position: absolute;
-			z-index: -1;
+			//position: absolute;
+			//z-index: -1;
 			width: 100%;
 
 			img {
@@ -845,6 +845,22 @@ main {
 		}
 		.promocion-descripcion {
 			text-align: justify;
+		}
+
+		.promocion-img-wrapper {
+			height: 320px;
+			width: 100%;
+			overflow: hidden;
+			display: block;
+			position: relative;
+
+			.promocion-img {
+				width: 100%;
+				position:absolute;
+			    top:0;
+			    bottom:0;
+			    margin:auto;
+			}
 		}
 	}
 
