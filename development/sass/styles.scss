@@ -618,8 +618,10 @@ main {
 		position: relative;
 	
 		.mag-back-bg {
-			//position: absolute;
-			//z-index: -1;
+			&.mag-back-bg-lg {
+				position: absolute;
+				z-index: -1;
+			}
 			width: 100%;
 
 			img {
