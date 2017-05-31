@@ -1117,11 +1117,11 @@ main {
 
 .gicsa-newsletter-bar {
 	color: white;
-	background-color: white;
+	background-color: $gray-dark;
 	overflow: hidden;
 
 	.gicsa-newsletter-bar-wrapper {
-		background-color: $gray-dark;
+		//background-color: $gray-dark;
 		min-height: 35px;
 		padding-top: 7px;
 
@@ -1146,7 +1146,7 @@ main {
 	}
 
 	.gicsa-appstore-wrapper {
-
+		//background-color: $gray-dark;
 		.gicsa-appstore-icon {
 			max-height: 30px;
 			padding-top: 2px;
