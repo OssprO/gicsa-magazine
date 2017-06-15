@@ -271,7 +271,7 @@ ol, ul {
 
 .img-fullbox {
 	min-width: 100%;
-	min-height: 100%;
+	//min-height: 100%;
 }
 
 
@@ -755,11 +755,11 @@ main {
 		}
 
 		.sociales-img {
-			
+			overflow: hidden;
 		}
 
 		.sociales-slider {
-			height: 380px;
+			//height: 380px;
 			img {
 				height: auto;
 			}
