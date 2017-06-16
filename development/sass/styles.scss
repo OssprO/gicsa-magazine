@@ -265,7 +265,7 @@ ol, ul {
 
 //Images
 .img-fullwidth {
-	min-width: 100%;
+	width: 100%;
 	//min-height: 100%;
 }
 
@@ -390,6 +390,8 @@ header {
 		form.navbar-form {
 			margin-bottom: 10px;
 			margin-top: 10px;
+			padding-left: 0;
+			padding-right: 5px;
 		}
 
 		
@@ -403,6 +405,11 @@ header {
 				margin-bottom: 9px;
 				margin-top: 9px;
 
+				&.navbar-form {
+					padding-left: 0;
+					padding-right: 0;
+				}
+
 				&.mag-header-social-icon {
 					img {
 						max-width: 18px;
@@ -411,10 +418,8 @@ header {
 				}
 				
 				a {
-					padding-left: 10px;
-					padding-right: 10px;
-
-
+					padding-left: 5px;
+					padding-right: 5px;
 				}
 			}
 		}
@@ -759,7 +764,6 @@ main {
 		}
 
 		.sociales-slider {
-			//height: 380px;
 			img {
 				height: auto;
 			}
@@ -769,6 +773,9 @@ main {
 	//Fotoparrafo
 	.mag-fotoparrafo {
 		display: none;
+		color: white;
+		height: auto;
+
 		@extend .m-bottom-10;
 
 		&.mag-fotoparrafo-uno {
@@ -788,10 +795,12 @@ main {
 				background-color: #88898f;
 			}
 		}
-		
-		color: white;
-		min-height: 380px;
 
+		.mag-fotoparrafo-img-wrapper {
+			.mag-fotoparrafo-img {
+				width: 100%;
+			}
+		}
 		
 		.fotoparrafo-contenido {
 
@@ -1153,7 +1162,6 @@ main {
 	}
 
 	.gicsa-appstore-wrapper {
-		//background-color: $gray-dark;
 		.gicsa-appstore-icon {
 			max-height: 30px;
 			padding-top: 2px;
@@ -1192,19 +1200,6 @@ main {
 			}
 		}
 	}
-	/*
-	button {
-		&.btn-gicsa {
-			font-size: 14px;
-			color: white;
-			min-width: 130px;
-			background-color: black;
-			border: 1px solid $gray-light;
-			border-radius: 0;
-			padding-top: 3px;
-			padding-bottom: 0px;
-		}
-	}*/
 }
 
 .gicsa-search-input {
@@ -1217,7 +1212,7 @@ main {
 	border-radius: 0;
 	color: white;
 	font-size: 14px;
-	width: 105px !important;
+	width: 85px !important;
 	height: 24px;
     margin-top: 3px;
     padding: 4px 0px 1px 22px
@@ -1531,13 +1526,7 @@ $screen-md-min: 992px;
 	}
 
 	header {
-		
 		.navbar-default {
-
-			
-
-			
-
 
 		}
 	}
@@ -1552,6 +1541,16 @@ $screen-md-min: 992px;
 		}
 
 		.mag-fotoparrafo {
+			overflow: hidden;
+			height: 380px;
+
+			.mag-fotoparrafo-img-wrapper {
+				.mag-fotoparrafo-img {
+					width: auto;
+					min-height: 380px;
+				}
+			}
+
 			.fotoparrafo-contenido {
 				.fotoparrafo-contenido-wrapper {
 					padding: 40px 60px 0 40px !important;
@@ -1700,12 +1699,12 @@ $screen-lg-min: 1200px;
 		.navbar-default {
 			.navbar-header {
 				.navbar-brand-wrapper {
-					width: 260px;
+					width: 245px;
 					height: 50px;
 					.navbar-brand {
 						position: absolute;
 						z-index: 1;
-						max-width: 275px;
+						max-width: 260px;
 						padding: 15px 10px;
 						height: 80px; 
 						background-color: black;
@@ -1726,7 +1725,7 @@ $screen-lg-min: 1200px;
 					    border-right: none;
 					}
 					a {
-						padding: 10px;
+						padding: 10px 8px;
 						text-align: left;
 						//text-transform: uppercase;
 						font-size: 11px;
